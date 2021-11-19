@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <title>Waris Radji - Resume</title>
+</head>
+
+<style>
+    @media print {
+        html {
+            zoom: 62.5%;
+        }
+    }
+</style>
+
+<body class="bg-gray-100 dark:bg-real-gray-900 print:bg-white">
+<button id="top-button" onclick="window.scrollTo(0, 0);" style="border-radius: 50%"
+        class="hidden fixed right-7 bottom-6 z-50 text-3xl my-red text-gray-50 py-2 px-2.5 opacity-50 hover:opacity-100 shadow-sm print:hidden">
+    <i class="fas fa-arrow-up"></i></button>
+
+<nav class="flex flex-col md:flex-row justify-center w-full bg-white dark:bg-real-gray-700 dark:text-gray-50 shadow-2xl md:sticky md:top-0 relative z-40 text-sm print:hidden">
+    <div id="menu" class="text-right md:hidden text-2xl"><i class="fas fa-bars"></i></div>
+    <a href="#about">
+        <div class="active">ABOUT</div>
+    </a>
+    <a href="#work-experience-education" class="hidden md:block">
+        <div>WORK EXPERIENCE & EDUCATION</div>
+    </a>
+    <a href="#work-experience" class="md:hidden exclude">
+        <div>WORK EXPERIENCE</div>
+    </a>
+    <a href="#education" class="md:hidden exclude">
+        <div>EDUCATION</div>
+    </a>
+    <a href="#achievements-projects">
+        <div>ACHIEVEMENTS & PROJECTS</div>
+    </a>
+    <a href="#skills-interests">
+        <div>SKILLS & KNOWLEDGE</div>
+    </a>
+
+    <i class="fas fa-lightbulb ml-4 neon text-gray-500 dark:text-yellow-200 absolute top-5 md:relative" style="cursor: pointer" onclick="$(document.documentElement).toggleClass('dark')"></i>
+
+    <i class="fas fa-print ml-4 absolute left-5 md:left-0 top-5 md:relative" style="cursor: pointer" onclick="window.print()"></i>
+</nav>
+<div class="container mx-auto relative lg:w-8/12 print:w-full print:min-w-full">
+    <div class="header-wrapper">
+        <header class="grid bg-white dark:bg-real-gray-800 md:grid-cols-3 grid-cols-2 gap-x-4 shadow-xl relative header animate__animated">
+            <div class="ribbon down z-10">
+                <div class="content">
+                    
+                        <a class="mx-1 text-right" target="_blank" href="https://github.com/riiswa"><span class="hidden print:inline">https://github.com/riiswa </span><i class="fab fa-github"></i></a><br>
+                    
+                        <a class="mx-1 text-right" target="_blank" href="https://www.instagram.com/riiswa/"><span class="hidden print:inline">https://www.instagram.com/riiswa/ </span><i class="fab fa-instagram"></i></a><br>
+                    
+                        <a class="mx-1 text-right" target="_blank" href="https://www.linkedin.com/in/warisr"><span class="hidden print:inline">https://www.linkedin.com/in/warisr </span><i class="fab fa-linkedin"></i></a><br>
+                    
+                        <a class="mx-1 text-right" target="_blank" href="https://warisradji.com/"><span class="hidden print:inline">https://warisradji.com/ </span><i class="fas fa-globe"></i></a><br>
+                    
+                </div>
+            </div>
+            <div class="col-span-2 md:col-span-1 relative flex" id="about">
+                <h1 class="text-4xl md:text-6xl absolute bottom-0 text-gray-50 md:invisible p-5 w-full leading-8 z-10">Hello
+                    <i class="fas fa-handshake my-red-text"></i>,
+                    I'm <span class="font-semibold">Waris Radji</span><br><span class="text-xl">Computer Science Student &amp; Freelancer</span>
+                </h1>
+                <div class="md:max-h-80 overflow-hidden mx-auto">
+                    <img class="md:max-w-none md:h-full" style="margin-left: 50%;
+    transform: translateX(-50%);" src="img/profile.jpg" onmouseover="this.src='img/profile-smile.jpg';"
+                         onmouseout="this.src='img/profile.jpg';" alt="profile picture">
+                </div>
+            </div>
+
+            <div class="col-span-2 m-2">
+                <h1 class="text-4xl hidden md:inline leading-6">Hello <i class="fas fa-handshake my-red-text"></i>, I'm
+                    <span class="font-semibold">Waris Radji</span><br><span
+                            class="text-xl">Computer Science Student &amp; Freelancer</span>
+                </h1>
+                <hr class="mb-1 hidden md:block">
+                <div class="grid grid-cols-4 gap-4 gap-x-10">
+                    
+                        <div class="font-bold">Age</div>
+                        
+                            <div class="col-span-3 text-gray-700 dark:text-gray-300" >20 years</div>
+                        
+                    
+                        <div class="font-bold">Location</div>
+                        
+                            <div class="col-span-3 text-gray-700 dark:text-gray-300" >France, Paris/Bordeaux</div>
+                        
+                    
+                        <div class="font-bold">Phone</div>
+                        
+                            <div class="col-span-3 text-gray-700 dark:text-gray-300" >+33 6 52 81 11 65</div>
+                        
+                    
+                        <div class="font-bold">E-mail</div>
+                        
+                            <div class="col-span-3 text-gray-700 dark:text-gray-300" ><a href="mailto:contact@warisradji.com">contact@warisradji.com</a></div>
+                        
+                    
+                        <div class="font-bold">Website</div>
+                        
+                            <div class="col-span-3 text-gray-700 dark:text-gray-300" ><a target="_blank" href="https://warisradji.com">https://warisradji.com</a></div>
+                        
+                    
+                        <div class="font-bold">Interests</div>
+                        
+                            <div class="col-span-3 text-gray-700 dark:text-gray-300" >Street Lifting, Competitive Programming, Biology</div>
+                        
+                    
+                </div>
+            </div>
+            <div class="my-red text-gray-50 col-span-full p-8 text-center text-xl">
+                Versatile Developer fascinated by AI and procedural generation. I mainly worked in Scala but I can adapt to other languages while paying a lot of care to software design and performance. I have proven myself through my jobs and my open-source contributions and I am ready to take on new challenges.
+            </div>
+        </header>
+    </div>
+    <section>
+        <div class="relative grid grid-cols-1 md:grid-cols-2" id="work-experience-education">
+            <div class="top-20 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto invisible md:visible"></div>
+            <div class="col-span-1 relative">
+                <div class="top-16 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto  md:invisible"></div>
+                <h2 id="work-experience"><i class="fas fa-briefcase"></i> WORK EXPERIENCE</h2>
+                
+                    <div class="job-block-wrapper">
+                        <div class="job-block relative animate__animated">
+                            <img class="absolute h-16 p-1.5" src="img/logo/chu-bdx.png">
+                            <span class="timeline-point-left" style="--timeline-top: 50%"></span>
+                            <div class="timeline-block-left">
+                                <span class="arrow-left" style="--timeline-top: 50%"></span>
+                                <div class="date">Jul 2021 - Aug 2021</div>
+                                <h3>Centre Hospitalier Universitaire de Bordeaux</h3>
+                                <p class="position">DATA ANALYST • Freelance</p>
+                                <p>Prediction of drowning risk from daily Meteo France meteorological data and development of an associated dashboard and an alert system.</p>
+                                <div class="badge-block">
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">SQLite</span>
+                                            <img alt="SQLite logo" src="img/ico/sqlite.png">
+                                        </div>
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">R</span>
+                                            <img alt="R logo" src="img/ico/r.png">
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="job-block-wrapper">
+                        <div class="job-block relative animate__animated">
+                            <img class="absolute h-16 p-1.5" src="img/logo/wellputt.png">
+                            <span class="timeline-point-left" style="--timeline-top: 50%"></span>
+                            <div class="timeline-block-left">
+                                <span class="arrow-left" style="--timeline-top: 50%"></span>
+                                <div class="date">Oct 2020 - Apr 2021</div>
+                                <h3>Wellputt USA</h3>
+                                <p class="position">LEAD KOTLIN DEVELOPER • Freelance</p>
+                                <p>Development of an Android application to supervise golfers and decision making regarding the technical aspects of the project within the team.</p>
+                                <div class="badge-block">
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">Firebase</span>
+                                            <img alt="Firebase logo" src="img/ico/firebase.png">
+                                        </div>
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">Android</span>
+                                            <img alt="Android logo" src="img/ico/android.png">
+                                        </div>
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">Kotlin</span>
+                                            <img alt="Kotlin logo" src="img/ico/kotlin.png">
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="job-block-wrapper">
+                        <div class="job-block relative animate__animated">
+                            <img class="absolute h-16 p-1.5" src="img/logo/locean.png">
+                            <span class="timeline-point-left" style="--timeline-top: 50%"></span>
+                            <div class="timeline-block-left">
+                                <span class="arrow-left" style="--timeline-top: 50%"></span>
+                                <div class="date">Apr 2020 - Aug 2020</div>
+                                <h3>CNRS - Laboratoire d’Océanographie et du Climat</h3>
+                                <p class="position">FULL-STACK DATA DEVELOPER • Internship</p>
+                                <p>Development of new functionalities for L-SAT, a web platform for collaborative analysis and exploration of satellite data. Minor changes to existing data analysis codes.</p>
+                                <div class="badge-block">
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">RabbitMQ</span>
+                                            <img alt="RabbitMQ logo" src="img/ico/rabbitmq.png">
+                                        </div>
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">ChartJS</span>
+                                            <img alt="ChartJS logo" src="img/ico/chartjs.png">
+                                        </div>
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">Javascript</span>
+                                            <img alt="Javascript logo" src="img/ico/javascript.svg">
+                                        </div>
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">Postgresql</span>
+                                            <img alt="Postgresql logo" src="img/ico/postgresql.png">
+                                        </div>
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">Matlab</span>
+                                            <img alt="Matlab logo" src="img/ico/matlab.png">
+                                        </div>
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">Django</span>
+                                            <img alt="Django logo" src="img/ico/django.png">
+                                        </div>
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">Python</span>
+                                            <img alt="Python logo" src="img/ico/python.png">
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="job-block-wrapper">
+                        <div class="job-block relative animate__animated">
+                            <img class="absolute h-16 p-1.5" src="img/logo/lipn.png">
+                            <span class="timeline-point-left" style="--timeline-top: 50%"></span>
+                            <div class="timeline-block-left">
+                                <span class="arrow-left" style="--timeline-top: 50%"></span>
+                                <div class="date">Jul 2019 - Aug 2019</div>
+                                <h3>CNRS - Northern Paris Computer Science Lab</h3>
+                                <p class="position">SCALA DATA DEVELOPER • Associate</p>
+                                <p>Implementation of a bio-inspired and clustering algorithm (Ant-Tree) in Scala to integrate it into the Clustering4Ever library. Use of data visualization libraries and Apache Spark to write ML notebooks.</p>
+                                <div class="badge-block">
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">Jupyter</span>
+                                            <img alt="Jupyter logo" src="img/ico/jupyter.png">
+                                        </div>
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">Maplotlib</span>
+                                            <img alt="Maplotlib logo" src="img/ico/matplotlib.png">
+                                        </div>
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">Spark</span>
+                                            <img alt="Spark logo" src="img/ico/spark.png">
+                                        </div>
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">Python</span>
+                                            <img alt="Python logo" src="img/ico/python.png">
+                                        </div>
+                                    
+                                        <div class="has-tooltip">
+                                            <span class="tooltip">Scala</span>
+                                            <img alt="Scala logo" src="img/ico/scala.png">
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="col-span-1 relative">
+                <div class="top-16 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto md:invisible"></div>
+                <h2 id="education"><i class="fas fa-user-graduate"></i> EDUCATION</h2>
+
+                
+                <div class="education-block-wrapper">
+                    <div class="education-block relative animate__animated">
+                        <img class="absolute h-16 p-1.5 right-0" src="img/logo/enseirb.png">
+                        <span class="timeline-point-right" style="--timeline-top: 50%"></span>
+                        <div class="timeline-block-right">
+                            <span class="arrow-right" style="--timeline-top: 50%"></span>
+                            <div class="date">2020 - 2023</div>
+                            <h3>Engineer&#39;s degree in Computer Science - PhD track</h3>
+                            <p class="position">ENSEIRB-MATMECA – Bordeaux Graduate School in Electronics, Computer Science, Telecommunications, Mathematics and Mechanics</p>
+                            <p>Master the necessary fundamental, theoretical and practical aspects of the main fields of computer sciences in order to develop. I joined the PhD track, which prepares engineering students for scientific research and its applications, encourages R&amp;D vocations and facilitates the understanding of doctoral studies, through seminars, round tables, visits, projects, specific modules, etc.</p>
+                            
+                            <div class="badge-text-block flex flex-wrap text-white gap-1 justify-center">
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Probability</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Data Mining</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Formal Methods</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Automata Theory</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Compiler Theory</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Distributed Computing</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Functional Programming</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Numerical Methods</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">System Programming</div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-block-wrapper">
+                    <div class="education-block relative animate__animated">
+                        <img class="absolute h-16 p-1.5 right-0" src="img/logo/uspn.png">
+                        <span class="timeline-point-right" style="--timeline-top: 50%"></span>
+                        <div class="timeline-block-right">
+                            <span class="arrow-right" style="--timeline-top: 50%"></span>
+                            <div class="date">2018 - 2020</div>
+                            <h3>Technical college degree in Computer Science</h3>
+                            <p class="position">Université Sorbonne Paris Nord (DUT Informatique)</p>
+                            <p>Multidisciplinary training that trains assistant engineers and project managers in management and industrial computing. Operational in software and hardware development, we have participated in the design, realization and implementation of computer systems.</p>
+                            
+                            <div class="badge-text-block flex flex-wrap text-white gap-1 justify-center">
+                                
+                                <div class="p-1 my-red text-xs rounded-md">OOP</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Database</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">HCI</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Web Programming</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Agile Methodology</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Linear Algebra</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Graph theory</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Algorithms</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Analysis</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Differential Equation</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Operational Research</div>
+                                
+                                <div class="p-1 my-red text-xs rounded-md">Computer Network</div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-block-wrapper">
+                    <div class="education-block relative animate__animated">
+                        <img class="absolute h-16 p-1.5 right-0" src="">
+                        <span class="timeline-point-right" style="--timeline-top: 50%"></span>
+                        <div class="timeline-block-right">
+                            <span class="arrow-right" style="--timeline-top: 50%"></span>
+                            <div class="date">2015 - 2018</div>
+                            <h3>High school diploma in Science &amp; Mathematics</h3>
+                            <p class="position">Lycée Camille-Saint-Saëns (Baccalauréat Scientifique)</p>
+                            <p>Development of a real scientific culture based on knowledge and an experimental approach to science.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <div class="my-10"></div>
+    <h2 id="achievements-projects"><i class="fas fa-project-diagram"></i> ACHIEVEMENTS & PROJECTS</h2>
+    <section class="flex flex-wrap gap-3">
+        
+        <div class="relative project-block-wrapper" style="flex: 1 0 300px;">
+            <div class="timeline-block project-block animate__animated">
+                <div class="date">2021</div>
+                <h3>Eirb&#39;IA</h3>
+                <p class="position">CO-FOUNDER (with Hector Piteau)</p>
+                <p>Creation and management of the Artificial Intelligence club of ENSEIRB-MATMECA trough workshops, conferences, debates, competitions and paper popularization.</p>
+            </div>
+        </div>
+        
+        <div class="relative project-block-wrapper" style="flex: 1 0 300px;">
+            <div class="timeline-block project-block animate__animated">
+                <div class="date">2021</div>
+                <h3>Hackathon DefInSpace</h3>
+                <p class="position">LEAD TECH</p>
+                <p> 24 hours to imagine solutions for space defense. My solution consisted in the implementation of a robust satellite network based on the Blockchain to ensure a reliable exchange of information.</p>
+            </div>
+        </div>
+        
+        <div class="relative project-block-wrapper" style="flex: 1 0 300px;">
+            <div class="timeline-block project-block animate__animated">
+                <div class="date">2020-2021</div>
+                <h3>Pokémon Workshop</h3>
+                <p class="position">LEAD BACK-END DEVELOPER</p>
+                <p>Creation of Pokémon Studio, a tool developed in React to create its Pokémon game project more simply. The goal is to replace Ruby Host, the Database editor, and to allow more relevance by leaving RPG Maker XP.</p>
+            </div>
+        </div>
+        
+        <div class="relative project-block-wrapper" style="flex: 1 0 300px;">
+            <div class="timeline-block project-block animate__animated">
+                <div class="date">2020</div>
+                <h3>Scala Retro</h3>
+                <p class="position">CONTRIBUTOR</p>
+                <p>Development of a sbt plugin for Scala Retro, a package that allows to generate UML Class Diagrams from Scala source code.</p>
+            </div>
+        </div>
+        
+        <div class="relative project-block-wrapper" style="flex: 1 0 300px;">
+            <div class="timeline-block project-block animate__animated">
+                <div class="date">2020</div>
+                <h3>Clustering4Ever</h3>
+                <p class="position">CONTRIBUTOR</p>
+                <p>Implement various ML algorithms into Clustering4Ever, a Big Data Clustering Library gathering clustering, unsupervised algorithms, and quality indices, written in Scala and Spark.</p>
+            </div>
+        </div>
+        
+        <div class="relative project-block-wrapper" style="flex: 1 0 300px;">
+            <div class="timeline-block project-block animate__animated">
+                <div class="date">2019</div>
+                <h3>Hackathon Blockchain Margo X UNICEF</h3>
+                <p class="position">BLOCKCHAIN DEVELOPER</p>
+                <p>Develop in 48 hours a solution to record the key stages of the child&#39;s life on the Blockchain. I developed part of the Node.js back-end and wrote Solidity smart contracts to deploy them on the Ethereum Blockchain.</p>
+            </div>
+        </div>
+        
+        <div class="relative project-block-wrapper" style="flex: 1 0 300px;">
+            <div class="timeline-block project-block animate__animated">
+                <div class="date">2018</div>
+                <h3>Ant Colony Simulator</h3>
+                <p class="position">MAIN DEVELOPER</p>
+                <p>Open source project about the simulation of an intelligent ant colony looking for the shortest path to a food source.</p>
+            </div>
+        </div>
+        
+    </section>
+    <div class="my-10"></div>
+    <h2 id="skills-interests"><i class="fas fa-book"></i> SKILLS & KNOWLEDGE</h2>
+    <section class="flex flex-wrap gap-5 justify-center">
+        
+        <div class="skill-block-wrapper">
+            <div class="skill-block animate__animated animate__slow">
+                <div class="skill-block-category text-center"><i class="fas fa-code"></i> Scala</div>
+                
+                <div>Dotty, Scalameta, Cats, ZIO, Scalaz, Shapeless</div>
+                
+            </div>
+        </div>
+        
+        <div class="skill-block-wrapper">
+            <div class="skill-block animate__animated animate__slow">
+                <div class="skill-block-category text-center"><i class="fas fa-laptop-code"></i> Programming</div>
+                
+                <div>Python, Java, JS/TS, Kotlin, C, MATLAB, Bash, C++, C#, R</div>
+                
+            </div>
+        </div>
+        
+        <div class="skill-block-wrapper">
+            <div class="skill-block animate__animated animate__slow">
+                <div class="skill-block-category text-center"><i class="fas fa-database"></i> Data/Cloud Engineering</div>
+                
+                <div>Apache Spark, Akka, Apache Kafka, Google Cloud Platform</div>
+                
+            </div>
+        </div>
+        
+        <div class="skill-block-wrapper">
+            <div class="skill-block animate__animated animate__slow">
+                <div class="skill-block-category text-center"><i class="fas fa-robot"></i> Data Science &amp; ML</div>
+                
+                <div>Scikit-Learn, Spark MLLIB, Clustering4Ever, Smile, (No)SQL, NLTK</div>
+                
+            </div>
+        </div>
+        
+        <div class="skill-block-wrapper">
+            <div class="skill-block animate__animated animate__slow">
+                <div class="skill-block-category text-center"><i class="fas fa-chart-pie"></i> Data Visualization</div>
+                
+                <div>D3.js, Plotly, ChartJS, Processing, Matplotlib, ggplot</div>
+                
+            </div>
+        </div>
+        
+        <div class="skill-block-wrapper">
+            <div class="skill-block animate__animated animate__slow">
+                <div class="skill-block-category text-center"><i class="fas fa-globe"></i> Web Framework</div>
+                
+                <div>Play!, Flask, Django, Angular</div>
+                
+            </div>
+        </div>
+        
+        <div class="skill-block-wrapper">
+            <div class="skill-block animate__animated animate__slow">
+                <div class="skill-block-category text-center"><i class="fas fa-language"></i> Language</div>
+                
+                <div>French ★★★★★, English ★★★, Spanish &amp; Chinese ★</div>
+                
+            </div>
+        </div>
+        
+    </section>
+</div>
+<div class="my-5"></div>
+<div class="p-16 my-red text-gray-50 print:hidden text-center">© 2021 Waris Radji ~ Build with ♥.</div>
+</body>
