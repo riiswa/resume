@@ -1,0 +1,230 @@
+@import "../node_modules/@fortawesome/fontawesome-free/css/fontawesome";
+@import "../node_modules/@fortawesome/fontawesome-free/css/brands";
+@import "../node_modules/@fortawesome/fontawesome-free/css/solid";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$my-red: #e01111;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-gray-800 dark:text-gray-50;
+  font-family: "Raleway", "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.my-red {
+  background-color: $my-red;
+}
+
+.my-red-text {
+  color: $my-red;
+}
+
+h2, h3, .badge-text-block {
+  font-family: "Oswald", "Raleway", "Roboto", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  @apply my-red-text text-3xl text-center my-6;
+}
+
+h3 {
+  @apply text-2xl text-center mb-2;
+}
+
+.neon {
+  text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          0 0 42px #fffedd,
+          0 0 82px #ffd500,
+          0 0 92px #ffd500,
+          0 0 102px #ffd500,
+          0 0 151px #ffd500;
+}
+
+.tooltip {
+  @apply invisible absolute rounded shadow-lg p-1 bg-gray-100 mt-8 text-black;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+
+.badge-block {
+  margin-bottom: 10px;
+  * {
+    float: right;
+  }
+  img {
+    height: 32px;
+  }
+}
+
+.force-visible {
+  display: block!important;
+}
+
+nav {
+  div {
+    @apply py-3.5 px-3 font-extrabold;
+  }
+
+  a div {
+    @apply hidden md:block;
+  }
+
+  a div:hover, .active {
+    @apply border-b-4;
+    border-bottom-color: $my-red;
+    margin-top: -4px;
+  }
+}
+
+:root {
+  --timeline-top: 30%;
+}
+
+.arrow {
+  @apply absolute invisible md:visible dark:arrow-dark;
+  width: 12px;
+  height: 41px;
+  display: block;
+  background-image: url(../img/arrows.png);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  background-repeat: no-repeat;
+  top: calc(var(--timeline-top) - 20px);
+}
+
+@layer utilities {
+  @variants dark {
+    .arrow-dark {
+      filter: brightness(0) saturate(100%) invert(11%) sepia(0%) saturate(0%) hue-rotate(145deg) brightness(86%) contrast(88%);
+    }
+
+  }
+}
+
+.arrow-left {
+  @apply arrow;
+  right: calc(2.5rem - 12px);
+  background-position: -18px 0;
+  margin-right: 2px;
+}
+
+.arrow-right {
+  @apply arrow;
+  left: calc(2.5rem - 12px);
+  background-position: 0 0;
+  margin-left: 2px;
+}
+
+.timeline-point {
+  @apply absolute my-red w-2 h-2 block invisible md:visible;
+  top: var(--timeline-top);
+  border-radius: 50%;
+}
+
+.timeline-point-left {
+  @apply timeline-point;
+  left: calc(100% - 4px);
+}
+
+.timeline-point-right {
+  @apply timeline-point;
+  right: calc(100% - 4px);
+}
+
+.timeline-block {
+  @apply bg-white dark:bg-real-gray-800 p-7 border-t-4 shadow-lg mb-5;
+  border-top-color: $my-red;
+}
+
+.timeline-block-left {
+  @apply timeline-block md:mr-10;
+}
+
+.timeline-block-right {
+  @apply timeline-block md:ml-10;
+}
+
+.date {
+  @apply font-bold;
+  color: $my-red;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.position {
+  @apply text-sm text-center text-gray-500 dark:text-gray-300 mb-2;
+}
+
+.ribbon {
+  position: absolute;
+  right: var(--right, 30px);
+  top: var(--top, -3px);
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.5));
+}
+.ribbon > .content {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  background: var(--color, $my-red) linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.25) 100%);
+  padding: 8px 2px 4px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+  min-height: var(--height, 36px);
+  transition: clip-path 1s, padding 1s, background 1s;
+}
+.ribbon.slant-up > .content {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12px), 50% calc(100% - 6px), 0 100%);
+}
+.ribbon.slant-down > .content {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 6px), 0 calc(100% - 12px));
+}
+.ribbon.down > .content {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 50% 100%, 0 calc(100% - 8px));
+}
+.ribbon.up > .content {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 8px), 0 100%);
+}
+.ribbon.check > .content {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 40% 100%, 0 calc(100% - 12px));
+}
+
+.skill-block {
+  @apply bg-white dark:bg-real-gray-800 shadow-lg rounded-md flex;
+
+  > div {
+    @apply p-2;
+  }
+}
+
+.skill-block-category {
+  @apply text-white font-bold my-red rounded-l-md;
+}
+
+@media print {
+  @page {
+    margin: 0;
+    size: A3;
+  }
+  body {
+    margin-top:0;
+    margin-right: 3cm;
+    margin-left: 3cm;
+  }
+  html, body {
+    height: 99%;
+  }
+}
+
+h2 i {
+  @apply text-gray-800 dark:text-gray-50;
+}

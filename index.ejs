@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <title><%= title %></title>
+</head>
+
+<style>
+    @media print {
+        html {
+            zoom: <%= zoom %>;
+        }
+    }
+</style>
+
+<body class="bg-gray-100 dark:bg-real-gray-900 print:bg-white">
+<button id="top-button" onclick="window.scrollTo(0, 0);" style="border-radius: 50%"
+        class="hidden fixed right-7 bottom-6 z-50 text-3xl my-red text-gray-50 py-2 px-2.5 opacity-50 hover:opacity-100 shadow-sm print:hidden">
+    <i class="fas fa-arrow-up"></i></button>
+
+<nav class="flex flex-col md:flex-row justify-center w-full bg-white dark:bg-real-gray-700 dark:text-gray-50 shadow-2xl md:sticky md:top-0 relative z-40 text-sm print:hidden">
+    <div id="menu" class="text-right md:hidden text-2xl"><i class="fas fa-bars"></i></div>
+    <a href="#about">
+        <div class="active">ABOUT</div>
+    </a>
+    <a href="#work-experience-education" class="hidden md:block">
+        <div>WORK EXPERIENCE & EDUCATION</div>
+    </a>
+    <a href="#work-experience" class="md:hidden exclude">
+        <div>WORK EXPERIENCE</div>
+    </a>
+    <a href="#education" class="md:hidden exclude">
+        <div>EDUCATION</div>
+    </a>
+    <a href="#achievements-projects">
+        <div>ACHIEVEMENTS & PROJECTS</div>
+    </a>
+    <a href="#skills-interests">
+        <div>SKILLS & KNOWLEDGE</div>
+    </a>
+
+    <i class="fas fa-lightbulb ml-4 neon text-gray-500 dark:text-yellow-200 absolute top-5 md:relative" style="cursor: pointer" onclick="$(document.documentElement).toggleClass('dark')"></i>
+
+    <i class="fas fa-print ml-4 absolute left-5 md:left-0 top-5 md:relative" style="cursor: pointer" onclick="window.print()"></i>
+</nav>
+<div class="container mx-auto relative lg:w-8/12 print:w-full print:min-w-full">
+    <div class="header-wrapper">
+        <header class="grid bg-white dark:bg-real-gray-800 md:grid-cols-3 grid-cols-2 gap-x-4 shadow-xl relative header animate__animated">
+            <div class="ribbon down z-10">
+                <div class="content">
+                    <% for(let link of links || []){  %>
+                        <a class="mx-1 text-right" target="_blank" href="<%= link.url %>"><span class="hidden print:inline"><%= link.url %> </span><i class="<%= link.icon %>"></i></a><br>
+                    <%} %>
+                </div>
+            </div>
+            <div class="col-span-2 md:col-span-1 relative flex" id="about">
+                <h1 class="text-4xl md:text-6xl absolute bottom-0 text-gray-50 md:invisible p-5 w-full leading-8 z-10">Hello
+                    <i class="fas fa-handshake my-red-text"></i>,
+                    I'm <span class="font-semibold"><%= firstName %> <%= lastName %></span><br><span class="text-xl"><%= position %></span>
+                </h1>
+                <div class="md:max-h-80 overflow-hidden mx-auto">
+                    <img class="md:max-w-none md:h-full" style="margin-left: 50%;
+    transform: translateX(-50%);" src="img/profile.jpg" onmouseover="this.src='img/profile-smile.jpg';"
+                         onmouseout="this.src='img/profile.jpg';" alt="profile picture">
+                </div>
+            </div>
+
+            <div class="col-span-2 m-2">
+                <h1 class="text-4xl hidden md:inline leading-6">Hello <i class="fas fa-handshake my-red-text"></i>, I'm
+                    <span class="font-semibold"><%= firstName %> <%= lastName %></span><br><span
+                            class="text-xl"><%= position %></span>
+                </h1>
+                <hr class="mb-1 hidden md:block">
+                <div class="grid grid-cols-4 gap-4 gap-x-10">
+                    <% for(let info of details || []){  %>
+                        <div class="font-bold"><%= info.key %></div>
+                        <% if (info.key.includes("mail")) {%>
+                            <div class="col-span-3 text-gray-700 dark:text-gray-300" ><a href="mailto:<%= info.value %>"><%= info.value %></a></div>
+                        <%} else if (info.key.includes("site")) {%>
+                            <div class="col-span-3 text-gray-700 dark:text-gray-300" ><a target="_blank" href="<%= info.value %>"><%= info.value %></a></div>
+                        <%} else { %>
+                            <div class="col-span-3 text-gray-700 dark:text-gray-300" ><%= info.value %></div>
+                        <%} %>
+                    <%} %>
+                </div>
+            </div>
+            <div class="my-red text-gray-50 col-span-full p-8 text-center text-xl">
+                <%= description %>
+            </div>
+        </header>
+    </div>
+    <section>
+        <div class="relative grid grid-cols-1 md:grid-cols-2" id="work-experience-education">
+            <div class="top-20 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto invisible md:visible"></div>
+            <div class="col-span-1 relative">
+                <div class="top-16 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto  md:invisible"></div>
+                <h2 id="work-experience"><i class="fas fa-briefcase"></i> WORK EXPERIENCE</h2>
+                <% for(let job of jobs || []){  %>
+                    <div class="job-block-wrapper">
+                        <div class="job-block relative animate__animated">
+                            <img class="absolute h-16 p-1.5" src="<%= job.logo %>">
+                            <span class="timeline-point-left" style="--timeline-top: <%= job.arrow %>%"></span>
+                            <div class="timeline-block-left">
+                                <span class="arrow-left" style="--timeline-top: <%= job.arrow %>%"></span>
+                                <div class="date"><%= job.date %></div>
+                                <h3><%= job.company %></h3>
+                                <p class="position"><%= job.position %></p>
+                                <p><%= job.description %></p>
+                                <div class="badge-block">
+                                    <%
+                                    const badges = [...job.badges].reverse();
+                                    for(let badge of badges || []){  %>
+                                        <div class="has-tooltip">
+                                            <span class="tooltip"><%= badge.name %></span>
+                                            <img alt="<%= badge.name %> logo" src="<%= badge.icon %>">
+                                        </div>
+                                    <%} %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <%} %>
+            </div>
+            <div class="col-span-1 relative">
+                <div class="top-16 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto md:invisible"></div>
+                <h2 id="education"><i class="fas fa-user-graduate"></i> EDUCATION</h2>
+
+                <% for(let education of educations || []){  %>
+                <div class="education-block-wrapper">
+                    <div class="education-block relative animate__animated">
+                        <img class="absolute h-16 p-1.5 right-0" src="<%= education.logo %>">
+                        <span class="timeline-point-right" style="--timeline-top: <%= education.arrow %>%"></span>
+                        <div class="timeline-block-right">
+                            <span class="arrow-right" style="--timeline-top: <%= education.arrow %>%"></span>
+                            <div class="date"><%= education.date %></div>
+                            <h3><%= education.degree %></h3>
+                            <p class="position"><%= education.school %></p>
+                            <p><%= education.description %></p>
+                            <% if (education.knowledges) {%>
+                            <div class="badge-text-block flex flex-wrap text-white gap-1 justify-center">
+                                <% for(let k of education.knowledges || []){  %>
+                                <div class="p-1 my-red text-xs rounded-md"><%= k %></div>
+                                <% } %>
+                            </div>
+                            <% } %>%>
+                        </div>
+                    </div>
+                </div>
+                <%} %>
+            </div>
+        </div>
+    </section>
+    <div class="my-10"></div>
+    <h2 id="achievements-projects"><i class="fas fa-project-diagram"></i> ACHIEVEMENTS & PROJECTS</h2>
+    <section class="flex flex-wrap gap-3">
+        <% for(let project of projects || []){  %>
+        <div class="relative project-block-wrapper" style="flex: 1 0 300px;">
+            <div class="timeline-block project-block animate__animated">
+                <div class="date"><%= project.date %></div>
+                <h3><%= project.name %></h3>
+                <p class="position"><%= project.position %></p>
+                <p><%= project.description %></p>
+            </div>
+        </div>
+        <%} %>
+    </section>
+    <div class="my-10"></div>
+    <h2 id="skills-interests"><i class="fas fa-book"></i> SKILLS & KNOWLEDGE</h2>
+    <section class="flex flex-wrap gap-5 justify-center">
+        <% for(let skill of skills || []){  %>
+        <div class="skill-block-wrapper">
+            <div class="skill-block animate__animated animate__slow">
+                <div class="skill-block-category text-center"><i class="<%= skill.icon %>"></i> <%= skill.category %></div>
+                <% if (skill.content) {%>
+                <div><%= skill.content %></div>
+                <%} %>
+            </div>
+        </div>
+        <%} %>
+    </section>
+</div>
+<div class="my-5"></div>
+<div class="p-16 my-red text-gray-50 print:hidden text-center">© 2021 Waris Radji ~ Build with ♥.</div>
+</body>
