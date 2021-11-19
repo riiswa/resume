@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^14.0.2",
+    "postcss-loader": "^6.1.1",
+    "postcss-mixins": "^8.1.0",
+    "postcss-nested": "^5.0.6",
+    "postcss-simple-vars": "^6.0.3",
+    "sass": "^1.37.5",
+    "tailwindcss": "^2.2.7"
+  },
+  "scripts": {
+    "build.html": "node yaml2json.js && ejs ./index.ejs -f data.json -o public/index.html",
+    "build:tailwind": "node_modules/.bin/postcss scss/style.scss -o public/css/style.css",
+    "watch:tailwind": "node_modules/.bin/postcss scss/style.scss -o public/css/style.css --watch"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "ejs": "^3.1.6",
+    "js-yaml": "^4.1.0"
+  }
+}
