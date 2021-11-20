@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build:html": "node yaml2json.js && ejs ./index.ejs -f data.json -o public/index.html",
-    "build:tailwind": "node_modules/.bin/postcss scss/style.scss -o public/css/style.css",
+    "build:tailwind": "NODE_ENV=production node_modules/.bin/postcss scss/style.scss -o public/css/style.css",
     "watch:tailwind": "node_modules/.bin/postcss scss/style.scss -o public/css/style.css --watch"
   },
   "dependencies": {
