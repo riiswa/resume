@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="<%= description %>">
 
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -106,7 +107,7 @@
                 <% for(let job of jobs || []){  %>
                     <div class="job-block-wrapper">
                         <div class="job-block relative animate__animated">
-                            <img class="absolute h-16 p-1.5" src="<%= job.logo %>">
+                            <img class="absolute h-16 p-1.5" src="<%= job.logo %>" alt="<%= job.company%> logo.">
                             <span class="timeline-point-left" style="--timeline-top: <%= job.arrow %>%"></span>
                             <div class="timeline-block-left">
                                 <span class="arrow-left" style="--timeline-top: <%= job.arrow %>%"></span>
@@ -136,7 +137,7 @@
                 <% for(let education of educations || []){  %>
                 <div class="education-block-wrapper">
                     <div class="education-block relative animate__animated">
-                        <img class="absolute h-16 p-1.5 right-0" src="<%= education.logo %>">
+                        <img class="absolute h-16 p-1.5 right-0" src="<%= education.logo %>" alt="<%education.school%> logo">
                         <span class="timeline-point-right" style="--timeline-top: <%= education.arrow %>%"></span>
                         <div class="timeline-block-right">
                             <span class="arrow-right" style="--timeline-top: <%= education.arrow %>%"></span>
@@ -188,5 +189,5 @@
     </section>
 </div>
 <div class="my-5"></div>
-<div class="p-16 my-red text-gray-50 print:hidden text-center">© 2021 Waris Radji ~ Build with ♥.</div>
+<footer class="p-16 my-red text-gray-50 print:hidden text-center">© 2021 Waris Radji ~ Build with ♥.</footer>
 </body>
