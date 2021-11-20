@@ -53,7 +53,7 @@ $(function() {
         observer('animate__fadeInLeftBig', '.job-block').observe(elem)
 
     for (const elem of document.getElementsByClassName('education-block-wrapper'))
-        observer('animate__fadeInRightBig', '.education-block').observe(elem)
+        observer('animate__fadeInLeftBig', '.education-block').observe(elem)
 
     observer('animate__slideInDown', 'header').observe(document.querySelector('.header-wrapper'))
 

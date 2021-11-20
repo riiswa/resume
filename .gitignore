@@ -2,3 +2,4 @@ node_modules/
 .idea/
 data.json
 *.html
+public/css/style.css
