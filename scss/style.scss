@@ -8,13 +8,16 @@
 
 $my-red: #e01111;
 
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
   @apply text-gray-800 dark:text-gray-50;
   font-family: "Raleway", "Roboto", Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
 }
 
 .my-red {
