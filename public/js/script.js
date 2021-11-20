@@ -44,7 +44,7 @@ $(function() {
             const elem = entry.target.querySelector(entrySelector);
 
             if (entry.isIntersecting) elem.classList.add(animationClass);
-            else elem.classList.remove(animationClass);
+            // else elem.classList.remove(animationClass);
         });
     });
 

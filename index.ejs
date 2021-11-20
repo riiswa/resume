@@ -50,7 +50,9 @@
 
     <i class="fas fa-lightbulb ml-4 neon text-gray-500 dark:text-yellow-200 absolute top-5 md:relative" style="cursor: pointer" onclick="$(document.documentElement).toggleClass('dark')"></i>
 
-    <i class="fas fa-print ml-4 absolute left-5 md:left-0 top-5 md:relative" style="cursor: pointer" onclick="window.print()"></i>
+    <i class="fas fa-file-pdf ml-4 absolute left-5 md:left-0 top-5 md:relative" style="cursor: pointer" onclick="window.open('waris-radji-resume.pdf')"></i>
+
+    <i class="fas fa-print ml-4 absolute left-10 md:left-0 top-5 md:relative" style="cursor: pointer" onclick="window.print()"></i>
 </nav>
 <div class="container mx-auto relative lg:w-8/12 print:w-full print:min-w-full">
     <div class="header-wrapper">
@@ -63,9 +65,9 @@
                 </div>
             </div>
             <div class="col-span-2 md:col-span-1 relative flex" id="about">
-                <h1 class="text-4xl md:text-6xl absolute bottom-0 text-gray-50 md:invisible p-5 w-full leading-8 z-10">Hello
+                <h1 class="text-3xl md:text-6xl absolute bottom-0 text-gray-50 md:invisible p-5 w-full leading-8 z-10">Hi
                     <i class="fas fa-handshake my-red-text"></i>,
-                    I'm <span class="font-semibold"><%= firstName %> <%= lastName %></span><br><span class="text-xl"><%= position %></span>
+                    I'm <span class="font-semibold"><%= firstName %> <%= lastName %></span><br><span class="text-lg"><%= position %></span>
                 </h1>
                 <div class="md:max-h-80 overflow-hidden mx-auto">
                     <img class="md:max-w-none md:h-full" style="margin-left: 50%;
@@ -98,7 +100,7 @@
             </div>
         </header>
     </div>
-    <section>
+    <section class="px-2">
         <div class="relative grid grid-cols-1 md:grid-cols-2" id="work-experience-education">
             <div class="top-20 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto invisible md:visible"></div>
             <div class="col-span-1 relative">
@@ -107,7 +109,9 @@
                 <% for(let job of jobs || []){  %>
                     <div class="job-block-wrapper">
                         <div class="job-block relative animate__animated">
-                            <img class="absolute h-16 p-1.5" src="<%= job.logo %>" alt="<%= job.company%> logo.">
+                            <% if (job.logo) { %>
+                                <img class="absolute h-16 p-1.5" src="<%= job.logo %>" alt="<%= job.company%> logo.">
+                            <% }%>
                             <span class="timeline-point-left" style="--timeline-top: <%= job.arrow %>%"></span>
                             <div class="timeline-block-left">
                                 <span class="arrow-left" style="--timeline-top: <%= job.arrow %>%"></span>
@@ -137,7 +141,9 @@
                 <% for(let education of educations || []){  %>
                 <div class="education-block-wrapper">
                     <div class="education-block relative animate__animated">
-                        <img class="absolute h-16 p-1.5 right-0" src="<%= education.logo %>" alt="<%education.school%> logo">
+                        <% if (education.logo) { %>
+                            <img class="absolute h-16 p-1.5 right-0" src="<%= education.logo %>" alt="<%education.school%> logo">
+                        <% }%>
                         <span class="timeline-point-right" style="--timeline-top: <%= education.arrow %>%"></span>
                         <div class="timeline-block-right">
                             <span class="arrow-right" style="--timeline-top: <%= education.arrow %>%"></span>
@@ -161,7 +167,7 @@
     </section>
     <div class="my-10"></div>
     <h2 id="achievements-projects"><i class="fas fa-project-diagram"></i> ACHIEVEMENTS & PROJECTS</h2>
-    <section class="flex flex-wrap gap-3">
+    <section class="flex flex-wrap gap-3 px-2">
         <% for(let project of projects || []){  %>
         <div class="relative project-block-wrapper" style="flex: 1 0 300px;">
             <div class="timeline-block project-block animate__animated">
@@ -175,7 +181,7 @@
     </section>
     <div class="my-10"></div>
     <h2 id="skills-interests"><i class="fas fa-book"></i> SKILLS & KNOWLEDGE</h2>
-    <section class="flex flex-wrap gap-5 justify-center">
+    <section class="flex flex-wrap gap-5 justify-center px-2">
         <% for(let skill of skills || []){  %>
         <div class="skill-block-wrapper">
             <div class="skill-block animate__animated animate__slow">
@@ -189,5 +195,5 @@
     </section>
 </div>
 <div class="my-5"></div>
-<footer class="p-16 my-red text-gray-50 print:hidden text-center">© 2021 Waris Radji ~ Build with ♥.</footer>
+<footer class="p-14 my-red text-gray-50 print:hidden text-center">© 2021 Waris Radji ~ Build with ♥.</footer>
 </body>
