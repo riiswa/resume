@@ -7181,8 +7181,10 @@ img, video {
   --tw-invert: invert(100%);
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -7197,6 +7199,7 @@ body {
 
 body {
   font-family: "Raleway", "Roboto", Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
 }
 
 .my-red {
