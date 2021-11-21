@@ -27,7 +27,7 @@
         class="hidden fixed right-7 bottom-6 z-50 text-3xl my-red text-gray-50 py-2 px-2.5 opacity-50 hover:opacity-100 shadow-sm print:hidden">
     <i class="fas fa-arrow-up"></i></button>
 
-<nav class="flex flex-col md:flex-row justify-center w-full bg-white dark:bg-real-gray-700 dark:text-gray-50 shadow-2xl md:sticky md:top-0 relative z-40 text-sm print:hidden">
+<nav class="flex flex-col md:flex-row justify-center w-full bg-white dark:bg-real-gray-700 dark:text-gray-50 shadow-2xl sticky top-0 z-40 text-sm print:hidden">
     <div id="menu" class="text-right md:hidden text-2xl"><i class="fas fa-bars"></i></div>
     <a href="#about">
         <div class="active">ABOUT</div>
@@ -118,7 +118,7 @@
                                 <div class="date"><%= job.date %></div>
                                 <h3><%= job.company %></h3>
                                 <p class="position"><%= job.position %></p>
-                                <p><%= job.description %></p>
+                                <p class="text-justify"><%= job.description %></p>
                                 <div class="badge-block">
                                     <%
                                     const badges = [...job.badges].reverse();
@@ -150,7 +150,7 @@
                             <div class="date"><%= education.date %></div>
                             <h3><%= education.degree %></h3>
                             <p class="position"><%= education.school %></p>
-                            <p><%= education.description %></p>
+                            <p class="text-justify"><%= education.description %></p>
                             <% if (education.knowledges) {%>
                             <div class="badge-text-block flex flex-wrap text-white gap-1 justify-center">
                                 <% for(let k of education.knowledges || []){  %>
@@ -174,7 +174,7 @@
                 <div class="date"><%= project.date %></div>
                 <h3><%= project.name %></h3>
                 <p class="position"><%= project.position %></p>
-                <p><%= project.description %></p>
+                <p class="text-justify"><%= project.description %></p>
             </div>
         </div>
         <%} %>
@@ -187,7 +187,7 @@
             <div class="skill-block animate__animated animate__slow">
                 <div class="skill-block-category text-center"><i class="<%= skill.icon %>"></i> <%= skill.category %></div>
                 <% if (skill.content) {%>
-                <div><%= skill.content %></div>
+                <div class="text-center my-auto"><%= skill.content %></div>
                 <%} %>
             </div>
         </div>

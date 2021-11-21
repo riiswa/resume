@@ -171,7 +171,7 @@ skills:
     content: Python, Java, JS/TS, Kotlin, C, MATLAB, Bash, C++, C#, R
   - icon: fas fa-database
     category: Data/Cloud Engineering
-    content: Apache Spark, Akka, Apache Kafka, Google Cloud Platform
+    content: Apache Spark, Akka, Apache Kafka, Google Cloud Platform, Apache Lucene
   - icon: fas fa-robot
     category: Data Science & ML
     content: Scikit-Learn, Spark MLLIB, Clustering4Ever, Smile, (No)SQL, NLTK
