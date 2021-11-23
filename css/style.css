@@ -7229,11 +7229,11 @@ body {
 }
 
 .my-red {
-  background-color: #e01111;
+  background-color: #DE3423;
 }
 
 .my-red-text {
-  color: #e01111;
+  color: #DE3423;
 }
 
 h2, h3, .badge-text-block {
@@ -7246,7 +7246,7 @@ h2 {
   text-align: center;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  color: #e01111;
+  color: #DE3423;
 }
 
 h3 {
@@ -7323,7 +7323,7 @@ nav a div {
 
 nav a div:hover, nav .active {
     border-bottom-width: 4px;
-    border-bottom-color: #e01111;
+    border-bottom-color: #DE3423;
     margin-top: -4px;
   }
 
@@ -7418,7 +7418,7 @@ nav a div:hover, nav .active {
   display: block;
   height: 0.5rem;
   width: 0.5rem;
-  background-color: #e01111;
+  background-color: #DE3423;
 }
 
 @media (min-width: 768px) {
@@ -7438,7 +7438,7 @@ nav a div:hover, nav .active {
   display: block;
   height: 0.5rem;
   width: 0.5rem;
-  background-color: #e01111;
+  background-color: #DE3423;
 }
 
 @media (min-width: 768px) {
@@ -7459,7 +7459,7 @@ nav a div:hover, nav .active {
   display: block;
   height: 0.5rem;
   width: 0.5rem;
-  background-color: #e01111;
+  background-color: #DE3423;
 }
 
 @media (min-width: 768px) {
@@ -7490,7 +7490,7 @@ nav a div:hover, nav .active {
   padding: 1.75rem;
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  border-top-color: #e01111;
+  border-top-color: #DE3423;
 }
 
 .timeline-block-left {
@@ -7509,7 +7509,7 @@ nav a div:hover, nav .active {
   padding: 1.75rem;
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  border-top-color: #e01111;
+  border-top-color: #DE3423;
 }
 
 @media (min-width: 768px) {
@@ -7534,7 +7534,7 @@ nav a div:hover, nav .active {
   padding: 1.75rem;
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  border-top-color: #e01111;
+  border-top-color: #DE3423;
 }
 
 @media (min-width: 768px) {
@@ -7545,7 +7545,7 @@ nav a div:hover, nav .active {
 
 .date {
   font-weight: 700;
-  color: #e01111;
+  color: #DE3423;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -7576,7 +7576,7 @@ nav a div:hover, nav .active {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 400;
-  background: var(--color, #e01111) linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.25) 100%);
+  background: var(--color, #DE3423) linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.25) 100%);
   padding: 8px 2px 4px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
@@ -7638,7 +7638,7 @@ nav a div:hover, nav .active {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-  background-color: #e01111;
+  background-color: #DE3423;
 }
 
 @media print {
