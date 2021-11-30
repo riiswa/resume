@@ -1,4 +1,4 @@
-zoom: "62.5%"
+zoom: "62%"
 title: "Waris Radji - Resume"
 firstName: "Waris"
 lastName: "Radji"
@@ -109,7 +109,7 @@ educations:
       - Functional Programming
       - Numerical Methods
       - System Programming
-
+      - Test Driven Development
   - date: "2018 - 2020"
     degree: "Technical college degree in Computer Science"
     logo: "img/logo/uspn.png"
@@ -152,7 +152,7 @@ projects:
     name: "Scala Retro"
     position: "CONTRIBUTOR"
     description: "Development of a sbt plugin for Scala Retro, a package that allows to generate UML Class Diagrams from Scala source code."
-  - date: "2020"
+  - date: "2019-2021"
     name: "Clustering4Ever"
     position: "CONTRIBUTOR"
     description: "Implement various ML algorithms into Clustering4Ever, a Big Data Clustering Library gathering clustering, unsupervised algorithms, and quality indices, written in Scala and Spark."
@@ -167,7 +167,7 @@ projects:
 skills:
   - icon: fas fa-code
     category: Scala
-    content: Dotty, Scalameta, Cats, ZIO, Scalaz, Shapeless
+    content: Dotty, Scala Native, Scalameta, Cats, ZIO, Scalaz, Shapeless
   - icon: fas fa-laptop-code
     category: Programming
     content: Python, Java, JS/TS, Kotlin, C, MATLAB, Bash, C++, C#, R
@@ -182,7 +182,7 @@ skills:
     content: D3.js, Plotly, ChartJS, Processing, Matplotlib, ggplot
   - icon: fas fa-globe
     category: Web Framework
-    content: Play!, Flask, Django, Angular
-  - icon: fas fa-language
-    category: Language
-    content: French ★★★★★, English ★★★, Spanish & Chinese ★
+    content: React, Play!, Flask, Django, Angular
+  - icon: fas fa-infinity
+    category: DevOps
+    content: Docker, Git, Travis, Selenium, sbt
