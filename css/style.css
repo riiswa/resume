@@ -6689,16 +6689,16 @@ img, video {
   bottom: 0px;
 }
 
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
 .bottom-6 {
   bottom: 1.5rem;
 }
 
 .-bottom-2 {
   bottom: -0.5rem;
-}
-
-.left-5 {
-  left: 1.25rem;
 }
 
 .left-10 {
@@ -6760,6 +6760,10 @@ img, video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mb-1 {
