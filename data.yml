@@ -32,7 +32,7 @@ jobs:
     logo: "img/logo/lunatech.jpg"
     arrow: 50
     position: "SCALA OPEN-SOURCE DEVELOPER • Internship • Rotterdam"
-    description: "Working on Scala 3 support and adding the call hierarchy feature into the open-source tool Metals, the Scala language server. I continue to actively contribute to this project by solving issues and doing code reviews."
+    description: "Working on Scala 3 support and adding the call hierarchy feature into the open-source tool Metals, the Scala language server. I still contribute to this project by solving issues and doing code reviews."
     badges:
       - name: "Scala"
         icon: "img/ico/scala.png"
@@ -59,7 +59,7 @@ jobs:
     logo: "img/logo/chu-bdx.png"
     arrow: 50
     position: "NODE.JS BACK-END DEVELOPER • Freelance • Remote"
-    description: "Creation of cloud functions and a database to manage the reservation of a coworking space, after the purchase of tickets via a WooCommerce site."
+    description: "Creation of cloud functions and a database to manage the reservation of coworking spaces by clients, after the purchase of tickets via a WooCommerce site."
     badges:
       - name: "Node.js"
         icon: "img/ico/nodejs.png"
