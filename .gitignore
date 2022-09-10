@@ -1,5 +1,8 @@
 node_modules/
 .idea/
 data.json
+software.json
+index.json
 *.html
 public/css/style.css
+.DS_Store
