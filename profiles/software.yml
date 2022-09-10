@@ -1,0 +1,12 @@
+jobs:
+  - lunatech
+  - connecteur
+  - locean
+  - wellputt
+projects:
+  - lunaconf
+  - mindmail
+  - studio
+  - retro
+  - c4e
+  - margo

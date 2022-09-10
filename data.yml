@@ -2,7 +2,7 @@ zoom: "62%"
 title: "Waris Radji - Resume"
 firstName: "Waris"
 lastName: "Radji"
-position: "Computer Science Student & Freelancer"
+position: "Artificial Intelligence Research Student & Freelancer"
 links:
   - url: "https://github.com/riiswa"
     icon: "fab fa-github"
@@ -13,9 +13,8 @@ links:
   - url: "https://warisradji.com"
     icon: "fas fa-globe"
 details:
-
   - key: "Age"
-    value: "21 years"
+    value: "22 years"
   - key: "Location"
     value: "France, Paris/Bordeaux"
   - key: "Phone"
@@ -25,14 +24,27 @@ details:
   - key: "Website"
     value: "https://warisradji.com"
   - key: "Interests"
-    value: "Street Lifting, Competitive Programming, Biology"
+    value: "Street Lifting, Competitive Programming, Evolutionary Genetics"
 description: "Versatile Developer with 3+ years experience of extensive knowledge in Software Design & Development with willingness to learn and master Data Engineering and Data Science. Functional Programming & Scala adept. Seeking a challenging position in an innovative & state-of-the-art company or research laboratory."
 jobs:
+  - date: "Jun 2022 - Aug 2022"
+    company: "Lunatech | Scala Center"
+    logo: "img/logo/lunatech.jpg"
+    arrow: 50
+    position: "SCALA OPEN-SOURCE DEVELOPER • Internship • Rotterdam"
+    description: "Working on Scala 3 support and adding the call hierarchy feature into the open-source tool Metals, the Scala language server. I continue to actively contribute to this project by solving issues and doing code reviews."
+    badges:
+      - name: "Scala"
+        icon: "img/ico/scala.png"
+      - name: "Scalameta"
+        icon: "img/ico/scalameta.png"
+    id: lunatech
+    link: https://github.com/scalameta/metals
   - date: "Jul 2021 - Aug 2021"
     company: "Centre Hospitalier Universitaire de Bordeaux"
     logo: "img/logo/chu-bdx.png"
     arrow: 50
-    position: "DATA ANALYST • Freelance"
+    position: "DATA ANALYST • Freelance • Remote"
     description: "Prediction of drowning risk from daily Meteo France meteorological data and development of an associated dashboard and an alert system."
     badges:
       - name: "R"
@@ -41,11 +53,25 @@ jobs:
         icon: "img/ico/sqlite.png"
       - name: "Docker"
         icon: "img/ico/docker.png"
+    id: chu-bdx
+  - date: "Jun 2021 - Jun 2022"
+    company: "Le Connecteur"
+    logo: "img/logo/chu-bdx.png"
+    arrow: 50
+    position: "NODE.JS BACK-END DEVELOPER • Freelance • Remote"
+    description: "Creation of cloud functions and a database to manage the reservation of a coworking space, after the purchase of tickets via a WooCommerce site."
+    badges:
+      - name: "Node.js"
+        icon: "img/ico/nodejs.png"
+      - name: "Firebase"
+        icon: "img/ico/firebase.png"
+    id: connecteur
+    link: https://www.leconnecteur-biarritz.fr/
   - date: "Oct 2020 - Apr 2021"
     company: "Wellputt USA"
     logo: "img/logo/wellputt.png"
     arrow: 50
-    position: "LEAD KOTLIN DEVELOPER • Freelance"
+    position: "LEAD KOTLIN DEVELOPER • Freelance • Remote"
     description: "Development of an Android application to supervise golfers and decision making regarding the technical aspects of the project within the team."
     badges:
       - name: "Kotlin"
@@ -54,11 +80,15 @@ jobs:
         icon: "img/ico/android.png"
       - name: "Firebase"
         icon: "img/ico/firebase.png"
+      - name: "SQLite"
+        icon: "img/ico/sqlite.png"
+    id: wellputt
+    link: https://play.google.com/store/apps/details?id=com.wellputt.wellputt
   - date: "Apr 2020 - Aug 2020"
-    company: "CNRS - Laboratoire d’Océanographie et du Climat"
+    company: "CNRS - Laboratoire d'Océanographie et du Climat"
     logo: "img/logo/locean.png"
     arrow: 50
-    position: "FULL-STACK DATA DEVELOPER • Internship"
+    position: "FULL-STACK DATA DEVELOPER • Internship • Paris"
     description: "Development of new functionalities for L-SAT, a web platform for collaborative analysis and exploration of satellite data. Minor changes to existing data analysis codes."
     badges:
       - name: "Python"
@@ -75,11 +105,12 @@ jobs:
         icon: "img/ico/chartjs.png"
       - name: "RabbitMQ"
         icon: "img/ico/rabbitmq.png"
+    id: locean
   - date: "Jul 2019 - Aug 2019"
     company: "CNRS - Northern Paris Computer Science Lab"
     logo: "img/logo/lipn.png"
     arrow: 50
-    position: "SCALA DATA DEVELOPER • Associate"
+    position: "SCALA DATA DEVELOPER • Associate • Paris"
     description: "Implementation of a bio-inspired and clustering algorithm (Ant-Tree) in Scala to integrate it into the Clustering4Ever library. Use of data visualization libraries and Apache Spark to write ML notebooks."
     badges:
       - name: "Scala"
@@ -92,11 +123,25 @@ jobs:
         icon: "img/ico/matplotlib.png"
       - name: "Jupyter"
         icon: "img/ico/jupyter.png"
+    id: lipn
+    link: https://github.com/Clustering4Ever/Clustering4Ever
 educations:
+  - date: "2022 -2023"
+    degree: "Numerics Graduate Program - Optimisation and Decision"
+    logo: "img/logo/ub.jpg"
+    school: " University of Bordeaux Graduate Research School"
+    description: "The Numerics program aims to train tomorrow's experts in complex digital systems analysis, through a week of courses and projects on the themes of optimisation and decision, and weekly seminars."
+    arrow: 20
+    knowledges:
+      - Combinatorial Optimization
+      - Mathematical Modelling and Programming
+      - Constraint Programming
+      - Energy considerations in deep learning
+    link: https://college-doctoral.u-bordeaux.fr/en/Graduate-Research-School/Graduate-Programs/Numerics
   - date: "2020 - 2023"
-    degree: "Engineer's degree in Computer Science - PhD track"
+    degree: "Engineer's degree in Computer Science - Artificial Intelligence Major - PhD track "
     logo: "img/logo/enseirb.png"
-    school: "ENSEIRB-MATMECA – Bordeaux Graduate School in Electronics, Computer Science, Telecommunications, Mathematics and Mechanics"
+    school: "ENSEIRB-MATMECA - Bordeaux Graduate School in Electronics, Computer Science, Telecommunications, Mathematics and Mechanics"
     description: "Master the necessary fundamental, theoretical and practical aspects of the main fields of computer sciences in order to develop. I joined the PhD track, which prepares engineering students for scientific research and its applications, encourages R&D vocations and facilitates the understanding of doctoral studies, through seminars, round tables, visits, projects, specific modules, etc."
     arrow: 50
     knowledges:
@@ -109,13 +154,15 @@ educations:
       - Functional Programming
       - Numerical Methods
       - System Programming
-      - Test Driven Development
+      - Computability Theory
+      - Type System
+    link: https://enseirb-matmeca.bordeaux-inp.fr/fr/informatique
   - date: "2018 - 2020"
     degree: "Technical college degree in Computer Science"
     logo: "img/logo/uspn.png"
     school: "Université Sorbonne Paris Nord (DUT Informatique)"
     description: "Multidisciplinary training that trains assistant engineers and project managers in management and industrial computing. Operational in software and hardware development, we have participated in the design, realization and implementation of computer systems."
-    arrow: 50
+    arrow: 80
     knowledges:
       - OOP
       - Database
@@ -129,60 +176,84 @@ educations:
       - Differential Equation
       - Operational Research
       - Computer Network
-  - date: "2015 - 2018"
-    degree: "High school diploma in Science & Mathematics"
-    logo: ""
-    school: "Lycée Camille-Saint-Saëns (Baccalauréat Scientifique)"
-    description: "Development of a real scientific culture based on knowledge and an experimental approach to science."
-    arrow: 50
 projects:
-  - date: "2021"
+  - date: "2022"
+    name: " GOOGLE ROADEF/EURO challenge 2012"
+    position: "APPRENTICE RESEARCHER"
+    description: "1 week to solve a machine reassignment problem, limited by hard constraints. I have mathematically modeled the problem as a system of linear equation, and I have solved it with Mixed Integer Programming methods using the Python-MIP library."
+    id: gro
+    link: https://github.com/Flopsky/google-roadef-euro-2012
+  - date: "2022 (Active)"
+    name: "Lunaconf"
+    position: "ANDROID KOTLIN DEVELOPER"
+    description: "Development of an application to help attendees follow the Lunaconf conference, through an interactive schedule."
+    id: lunaconf
+  - date: "2022"
+    name: "Universal adversarial perturbations"
+    position: "APPRENTICE RESEARCHER"
+    description: 'Reproduction of an experiment from the paper "Universal adversarial perturbations" (accepted at CVPR 2017) consisting in proving the efficiency of universal perturbations on the VGG11 architecture.'
+    id: uap
+    link: https://github.com/riiswa/universal
+  - date: "2022"
+    name: "MindMail"
+    position: "DEVELOPER"
+    description: 'Creation of an "intelligent" webmail client, capable of classifying mails by automatically determining the different categories. An interactive interface allows to visualize the created clusters.'
+    id: mindmail
+  - date: "2021-2022 (Active)"
     name: "Eirb'IA"
     position: "CO-FOUNDER (with Hector Piteau)"
     description: "Creation and management of the Artificial Intelligence Club of ENSEIRB-MATMECA through workshops, conferences, debates, competitions and paper popularization."
+    id: eirbia
   - date: "2021"
     name: "Hackathon DefInSpace"
     position: "LEAD TECH"
     description: "24 hours to imagine solutions for space defense. My solution consisted in the implementation of a robust satellite network based on the Blockchain to ensure a reliable exchange of information."
-  - date: "2020-2021"
-    name: "Pokémon Workshop"
+    id: definspace
+  - date: "2020-2022 (Active)"
+    name: "Pokémon Studio"
     position: "LEAD BACK-END DEVELOPER"
     description: "Creation of Pokemon Studio, a tool developed in React to create its Pokemon game project more simply. The goal is to replace Ruby Host, the Database editor, and to allow more relevance by leaving RPG Maker XP."
-  - date: "2020"
+    id: studio
+    link: https://www.youtube.com/watch?v=kvfdrS4fCbg&ab_channel=Pok%C3%A9monWorkshop
+  - date: "2020-2022 (Active)"
     name: "Scala Retro"
-    position: "CONTRIBUTOR"
+    position: "MAINTAINER"
     description: "Development of a sbt plugin for Scala Retro, a package that allows to generate UML Class Diagrams from Scala source code."
+    id: retro
+    link: https://github.com/scala-retro
   - date: "2019-2021"
     name: "Clustering4Ever"
     position: "CONTRIBUTOR"
     description: "Implement various ML algorithms into Clustering4Ever, a Big Data Clustering Library gathering clustering, unsupervised algorithms, and quality indices, written in Scala and Spark."
+    id: c4e
+    link: https://github.com/Clustering4Ever/Clustering4Ever
   - date: "2019"
     name: "Hackathon Blockchain Margo X UNICEF"
     position: "BLOCKCHAIN DEVELOPER"
     description: "Develop in 48 hours a solution to record the key stages of the child's life on the Blockchain. I developed part of the Node.js back-end and wrote Solidity smart contracts to deploy them on the Ethereum Blockchain."
+    id: margo
   - date: "2018"
     name: "Ant Colony Simulator"
     position: "MAIN DEVELOPER"
     description: "Open source project about the simulation of an intelligent ant colony looking for the shortest path to a food source."
+    id: ant
+    link: https://github.com/riiswa/colony-ant-simulator
 skills:
   - icon: fas fa-code
     category: Scala
-    content: Dotty, Scala Native, Scalameta, Cats, ZIO, Scalaz, Shapeless
+    content: Native, Scala.js, Cats, ZIO, Scalaz
   - icon: fas fa-laptop-code
     category: Programming
-    content: Python, Java, JS/TS, Kotlin, C, MATLAB, Bash, C++, C#, R
+    content: Python, Java, Haskell, JS/TS, C, C++, Kotlin
   - icon: fas fa-database
-    category: Data/Cloud Engineering
-    content: Apache Spark, Akka, Apache Kafka, Google Cloud Platform, Apache Lucene
+    category: Data Engineering
+    content: Spark, Kafka, Google Cloud Platform, (No)SQL
   - icon: fas fa-robot
-    category: Data Science & ML
-    content: Scikit-Learn, Spark MLLIB, Clustering4Ever, Smile, (No)SQL, NLTK
+    category: Machine Learning
+    content: Scikit-Learn, TensorFlow, Pytorch, Clustering4Ever, NLTK, Deeplearning4j
   - icon: fas fa-chart-pie
     category: Data Visualization
     content: D3.js, Plotly, ChartJS, Processing, Matplotlib, ggplot
   - icon: fas fa-globe
     category: Web Framework
     content: React, Play!, Flask, Django, Angular
-  - icon: fas fa-infinity
-    category: DevOps
-    content: Docker, Git, Travis, Selenium, sbt

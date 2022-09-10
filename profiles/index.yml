@@ -1,0 +1,12 @@
+jobs:
+  - lunatech
+  - connecteur
+  - locean
+  - lipn
+projects:
+  - gro
+  - uap
+  - eirbia
+  - studio
+  - c4e
+  - margo
