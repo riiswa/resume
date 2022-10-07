@@ -152,33 +152,42 @@
                                         <div class="timeline-block-left">
                                             <span class="arrow-left" style="--timeline-top: <%= job.arrow %>%"></span>
                                             <% if (job.link) { %>
-                                                <a class="absolute bottom-2" href="<%= job.link %>" target="_blank"><i
-                                                        class="fas fa-link opacity-50 hover:opacity-100"></i></a>
-                                                <% }%>
-                                                    <div class="date">
-                                                        <%= job.date %>
-                                                    </div>
-                                                    <h3>
-                                                        <%= job.company %>
-                                                    </h3>
-                                                    <p class="position">
-                                                        <%= job.position %>
-                                                    </p>
-                                                    <p class="text-justify">
-                                                        <%= job.description %>
-                                                    </p>
-                                                    <div class="badge-block">
-                                                        <% const badges=[...job.badges].reverse(); for(let badge of
-                                                            badges || []){ %>
-                                                            <div class="has-tooltip">
-                                                                <span class="tooltip">
-                                                                    <%= badge.name %>
-                                                                </span>
-                                                                <img alt="<%= badge.name %> logo"
-                                                                    src="<%= badge.icon %>">
-                                                            </div>
-                                                            <%} %>
-                                                    </div>
+                                                <% if (job.link.includes("github.com")) { %>
+                                                    <a class="absolute bottom-2 opacity-50 hover:opacity-100 github-link"
+                                                        id="a-<%= job.id %>" href="<%= job.link %>" target="_blank"><i
+                                                            class="fab fa-github"></i> <span
+                                                            id="star-<%= job.id %>"></span>
+                                                    </a>
+                                                    <% } else { %>
+                                                        <a class="absolute bottom-2" href="<%= job.link %>"
+                                                            target="_blank"><i
+                                                                class="fas fa-link opacity-50 hover:opacity-100"></i></a>
+                                                        <% } %>
+                                                            <% }%>
+                                                                <div class="date">
+                                                                    <%= job.date %>
+                                                                </div>
+                                                                <h3>
+                                                                    <%= job.company %>
+                                                                </h3>
+                                                                <p class="position">
+                                                                    <%= job.position %>
+                                                                </p>
+                                                                <p class="text-justify">
+                                                                    <%= job.description %>
+                                                                </p>
+                                                                <div class="badge-block">
+                                                                    <% const badges=[...job.badges].reverse(); for(let
+                                                                        badge of badges || []){ %>
+                                                                        <div class="has-tooltip">
+                                                                            <span class="tooltip">
+                                                                                <%= badge.name %>
+                                                                            </span>
+                                                                            <img alt="<%= badge.name %> logo"
+                                                                                src="<%= badge.icon %>">
+                                                                        </div>
+                                                                        <%} %>
+                                                                </div>
                                         </div>
                             </div>
                         </div>
@@ -236,21 +245,28 @@
                 <div class="relative project-block-wrapper" style="flex: 1 0 400px;">
                     <div class="timeline-block project-block animate__animated">
                         <% if (project.link) { %>
-                            <a class="absolute" href="<%= project.link %>" target="_blank"><i
-                                    class="fas fa-link opacity-50 hover:opacity-100"></i></a>
-                            <% }%>
-                                <div class="date">
-                                    <%= project.date %>
-                                </div>
-                                <h3>
-                                    <%= project.name %>
-                                </h3>
-                                <p class="position">
-                                    <%= project.position %>
-                                </p>
-                                <p class="text-justify">
-                                    <%= project.description %>
-                                </p>
+                            <% if (project.link.includes("github.com")) { %>
+                                <a class="absolute opacity-50 hover:opacity-100 github-link" id="a-<%= project.id %>"
+                                    href="<%= project.link %>" target="_blank"><i class="fab fa-github"></i> <span
+                                        id="star-<%= project.id %>"></span>
+                                </a>
+                                <% } else { %>
+                                    <a class="absolute" href="<%= project.link %>" target="_blank"><i
+                                            class="fas fa-link opacity-50 hover:opacity-100"></i></a>
+                                    <% } %>
+                                        <% }%>
+                                            <div class="date">
+                                                <%= project.date %>
+                                            </div>
+                                            <h3>
+                                                <%= project.name %>
+                                            </h3>
+                                            <p class="position">
+                                                <%= project.position %>
+                                            </p>
+                                            <p class="text-justify">
+                                                <%= project.description %>
+                                            </p>
                     </div>
                 </div>
                 <%} %>
@@ -282,4 +298,34 @@
         <br>
         © 2022 Waris Radji ~ Build with ♥.
     </footer>
+    <script>
+        // Code from https://stackoverflow.com/questions/10599933/convert-long-number-into-abbreviated-string-in-javascript-with-a-special-shortn
+        function abbreviateNumber(value) {
+            var newValue = value;
+            if (value >= 1000) {
+                var suffixes = ["", "k", "m", "b", "t"];
+                var suffixNum = Math.floor(("" + value).length / 3);
+                var shortValue = '';
+                for (var precision = 2; precision >= 1; precision--) {
+                    shortValue = parseFloat((suffixNum != 0 ? (value / Math.pow(1000, suffixNum)) : value).toPrecision(precision));
+                    var dotLessShortValue = (shortValue + '').replace(/[^a-zA-Z 0-9]+/g, '');
+                    if (dotLessShortValue.length <= 2) { break; }
+                }
+                if (shortValue % 1 != 0) shortValue = shortValue.toFixed(1);
+                newValue = shortValue + suffixes[suffixNum];
+            }
+            return newValue;
+        }
+
+        document.querySelectorAll(".github-link").forEach(a => {
+            const [usr, repo] = a.href.split("/").slice(-2);
+            fetch(`https://api.github.com/repos/${usr}/${repo}?page=10&per_page=100`).then((response) => {
+                response.json().then((json) => {
+                    document.getElementById(a.id.replace("a-", "star-")).innerHTML = json.stargazers_count > 0 ? `${abbreviateNumber(json.stargazers_count)} <i
+                                        class="fas fa-star text-xs text-yellow-400"></i>` : "";
+                })
+
+            })
+        });
+    </script>
 </body>

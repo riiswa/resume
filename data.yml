@@ -220,7 +220,7 @@ projects:
     position: "MAINTAINER"
     description: "Development of a sbt plugin for Scala Retro, a package that allows to generate UML Class Diagrams from Scala source code."
     id: retro
-    link: https://github.com/scala-retro
+    link: https://github.com/scala-retro/scala-retro
   - date: "2019-2021"
     name: "Clustering4Ever"
     position: "CONTRIBUTOR"
