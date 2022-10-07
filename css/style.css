@@ -7130,6 +7130,11 @@ img, video {
   color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
 
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgba(251, 191, 36, var(--tw-text-opacity));
+}
+
 .dark .dark\:text-gray-50 {
   --tw-text-opacity: 1;
   color: rgba(249, 250, 251, var(--tw-text-opacity));
