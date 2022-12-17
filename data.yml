@@ -18,14 +18,14 @@ details:
   - key: "Location"
     value: "France, Paris/Bordeaux"
   - key: "Phone"
-    value: "XXX"
+    value: "+33 6 52 81 11 65"
   - key: "E-mail"
-    value: "XXX"
+    value: "contact@warisradji.com"
   - key: "Website"
     value: "https://warisradji.com"
   - key: "Interests"
-    value: "Street Lifting, Competitive Programming, Evolutionary Genetics"
-description: "Versatile Developer with 3+ years experience of extensive knowledge in Software Design & Development with willingness to learn and master Data Engineering and Data Science. Functional Programming & Scala adept. Seeking a challenging position in an innovative & state-of-the-art company or research laboratory."
+    value: "Street Lifting, Competitive Programming, Biology (Evolutionary Genetics)"
+description: "Seeking a challenging position as a Reinforcement Learning Research Scientist in an innovative and state-of-the-art company or research laboratory. Experienced Software Engineer with 3+ years of experience, I have a solid background in designing AI system, that gives me a unique perspective and set of skills that I believe would be valuable in contributing to the development of advanced reinforcement learning research."
 jobs:
   - date: "Jun 2022 - Aug 2022"
     company: "Lunatech | Scala Center"
@@ -146,16 +146,20 @@ educations:
     arrow: 50
     knowledges:
       - Probability
-      - Data Mining
       - Formal Methods
       - Automata Theory
       - Compiler Theory
       - Distributed Computing
-      - Functional Programming
       - Numerical Methods
       - System Programming
       - Computability Theory
-      - Type System
+      - Machine Learning
+      - Reinforcement Learning
+      - Deep Learning
+      - Video Analysis
+      - Computer Vision
+      - Search Algorithms
+      - Knowledge Representation
     link: https://enseirb-matmeca.bordeaux-inp.fr/fr/informatique
   - date: "2018 - 2020"
     degree: "Technical college degree in Computer Science"
@@ -177,6 +181,16 @@ educations:
       - Operational Research
       - Computer Network
 projects:
+  - date: "2022-2023"
+    name: " Evolutionary DIAYN"
+    position: "APPRENTICE RESEARCHER"
+    description: "Explored the benefits and limitations of applying DIAYN, a unsupervised reinforcement learning algorithm for skills discovery, on top of Evolutionary Strategies. Evaluated the performance and potential applications of this combination, and identified key considerations for effectively implementing DIAYN with Evolutionary Strategies.""
+    id: ediayn
+  - date: "2022-2023"
+    name: " Symboling: Reinforcement learning on symbolic data"
+    position: "APPRENTICE RESEARCHER"
+    description: "In collaboration with the INRIA Mnemosyne team, development of a variant of Q-Learning for use with symbolic data, allowing the incorporation of structured knowledge in the form of qualitative or quantitative data. Utilized edit distance to connect data points and navigate the space of the problem.""
+    id: srl
   - date: "2022"
     name: " GOOGLE ROADEF/EURO challenge 2012"
     position: "APPRENTICE RESEARCHER"
@@ -240,11 +254,11 @@ projects:
     link: https://github.com/riiswa/colony-ant-simulator
 skills:
   - icon: fas fa-code
-    category: Scala
-    content: Native, Scala.js, Cats, ZIO, Scalaz
-  - icon: fas fa-laptop-code
     category: Programming
-    content: Python, Java, Haskell, JS/TS, C, C++, Kotlin
+    content: Scala, Python, Java, Haskell, JS/TS, C, C++, Kotlin
+  - icon: fas fa-code
+    category: Reinforcement Learning
+    content: QL, SARSA, DQL, SAC, DIAYN, Gym, Stable Baselines
   - icon: fas fa-database
     category: Data Engineering
     content: Spark, Kafka, Google Cloud Platform, (No)SQL
