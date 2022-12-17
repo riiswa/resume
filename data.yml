@@ -184,12 +184,12 @@ projects:
   - date: "2022-2023"
     name: " Evolutionary DIAYN"
     position: "APPRENTICE RESEARCHER"
-    description: "Explored the benefits and limitations of applying DIAYN, a unsupervised reinforcement learning algorithm for skills discovery, on top of Evolutionary Strategies. Evaluated the performance and potential applications of this combination, and identified key considerations for effectively implementing DIAYN with Evolutionary Strategies.""
+    description: "Explored the benefits and limitations of applying DIAYN, a unsupervised reinforcement learning algorithm for skills discovery, on top of Evolutionary Strategies. Evaluated the performance and potential applications of this combination, and identified key considerations for effectively implementing DIAYN with Evolutionary Strategies."
     id: ediayn
   - date: "2022-2023"
     name: " Symboling: Reinforcement learning on symbolic data"
     position: "APPRENTICE RESEARCHER"
-    description: "In collaboration with the INRIA Mnemosyne team, development of a variant of Q-Learning for use with symbolic data, allowing the incorporation of structured knowledge in the form of qualitative or quantitative data. Utilized edit distance to connect data points and navigate the space of the problem.""
+    description: "In collaboration with the INRIA Mnemosyne team, development of a variant of Q-Learning for use with symbolic data, allowing the incorporation of structured knowledge in the form of qualitative or quantitative data. Utilized edit distance to connect data points and navigate the space of the problem."
     id: srl
   - date: "2022"
     name: " GOOGLE ROADEF/EURO challenge 2012"
