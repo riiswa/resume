@@ -4,9 +4,10 @@ jobs:
   - locean
   - lipn
 projects:
+  - ediayn
+  - srl
   - gro
   - uap
   - eirbia
   - studio
   - c4e
-  - margo
