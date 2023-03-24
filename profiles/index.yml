@@ -1,12 +1,12 @@
 jobs:
+  - scool
   - lunatech
-  - connecteur
   - locean
   - lipn
 projects:
   - ediayn
   - srl
-  - gro
+  #- gro
   - uap
   - eirbia
   - studio

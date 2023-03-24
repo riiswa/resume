@@ -1,4 +1,4 @@
-zoom: "62%"
+zoom: "68%"
 title: "Waris Radji - Resume"
 firstName: "Waris"
 lastName: "Radji"
@@ -16,7 +16,7 @@ details:
   - key: "Age"
     value: "22 years"
   - key: "Location"
-    value: "France, Paris/Bordeaux"
+    value: "France (open to relocation in Europa)"
   - key: "Phone"
     value: "+33 6 52 81 11 65"
   - key: "E-mail"
@@ -24,15 +24,27 @@ details:
   - key: "Website"
     value: "https://warisradji.com"
   - key: "Interests"
-    value: "Street Lifting, Competitive Programming, Biology (Evolutionary Genetics)"
+    value: "Street Lifting, Competitive Programming, Evolutionary Genetics"
 description: "Seeking a challenging position as a Reinforcement Learning Research Scientist in an innovative and state-of-the-art company or research laboratory. Experienced Software Engineer with 3+ years of experience, I have a solid background in designing AI system, that gives me a unique perspective and set of skills that I believe would be valuable in contributing to the development of advanced reinforcement learning research."
 jobs:
+  - date: "Jan 2023 - Aug 2023"
+    company: "Inria - Team Scool"
+    logo: "img/logo/inria.png"
+    arrow: 50
+    position: "RESEARCH SCIENTIST • Internship supervised by Odalric-Ambrym Maillard • Lille"
+    description: "Investigate the extension of novel, multi-armed bandit-inspired strategies from small Markov Decision Processes to larger models, focusing on a non-parametric and model-free approach."
+    badges:
+      - name: "Python"
+        icon: "img/ico/python.png"
+      - name: "Pytorch"
+        icon: "img/ico/pytorch.png"
+    id: scool
   - date: "Jun 2022 - Aug 2022"
     company: "Lunatech | Scala Center"
     logo: "img/logo/lunatech.jpg"
     arrow: 50
-    position: "SCALA OPEN-SOURCE DEVELOPER • Internship • Rotterdam"
-    description: "Working on Scala 3 support and adding the call hierarchy feature into the open-source tool Metals, the Scala language server. I still contribute to this project by solving issues and doing code reviews."
+    position: "OPEN-SOURCE DEVELOPER • Internship supervised by Chris Kipp • Rotterdam"
+    description: "Working on Scala 3 support and adding the call hierarchy feature into the open-source tool Metals, the Scala language server. I have been involved in the development of other minor features and in fixing many issues."
     badges:
       - name: "Scala"
         icon: "img/ico/scala.png"
@@ -58,7 +70,7 @@ jobs:
     company: "Le Connecteur"
     logo: "img/logo/chu-bdx.png"
     arrow: 50
-    position: "NODE.JS BACK-END DEVELOPER • Freelance • Remote"
+    position: "BACK-END DEVELOPER • Freelance • Remote"
     description: "Creation of cloud functions and a database to manage the reservation of coworking spaces by clients, after the purchase of tickets via a WooCommerce site."
     badges:
       - name: "Node.js"
@@ -71,7 +83,7 @@ jobs:
     company: "Wellputt USA"
     logo: "img/logo/wellputt.png"
     arrow: 50
-    position: "LEAD KOTLIN DEVELOPER • Freelance • Remote"
+    position: "LEAD ANDROID DEVELOPER • Freelance • Remote"
     description: "Development of an Android application to supervise golfers and decision making regarding the technical aspects of the project within the team."
     badges:
       - name: "Kotlin"
@@ -88,7 +100,7 @@ jobs:
     company: "CNRS - Laboratoire d'Océanographie et du Climat"
     logo: "img/logo/locean.png"
     arrow: 50
-    position: "FULL-STACK DATA DEVELOPER • Internship • Paris"
+    position: "SOFTWARE ENGINEER • Internship supervised by Dimitry Khvorostyanov • Paris"
     description: "Development of new functionalities for L-SAT, a web platform for collaborative analysis and exploration of satellite data. Minor changes to existing data analysis codes."
     badges:
       - name: "Python"
@@ -110,7 +122,7 @@ jobs:
     company: "CNRS - Northern Paris Computer Science Lab"
     logo: "img/logo/lipn.png"
     arrow: 50
-    position: "SCALA DATA DEVELOPER • Associate • Paris"
+    position: "MACHINE LEARNING ENGINEER • Associate • Paris"
     description: "Implementation of a bio-inspired and clustering algorithm (Ant-Tree) in Scala to integrate it into the Clustering4Ever library. Use of data visualization libraries and Apache Spark to write ML notebooks."
     badges:
       - name: "Scala"
@@ -182,17 +194,17 @@ educations:
       - Computer Network
 projects:
   - date: "2022-2023"
-    name: " Evolutionary DIAYN"
+    name: "Evolutionary DIAYN"
     position: "APPRENTICE RESEARCHER"
-    description: "Explored the benefits and limitations of applying DIAYN, a unsupervised reinforcement learning algorithm for skills discovery, on top of Evolutionary Strategies. Evaluated the performance and potential applications of this combination, and identified key considerations for effectively implementing DIAYN with Evolutionary Strategies."
+    description: "Explored the benefits and limitations of applying DIAYN, a unsupervised reinforcement learning algorithm for skills discovery, on top of Evolutionary Strategies."
     id: ediayn
   - date: "2022-2023"
-    name: " Symboling: Reinforcement learning on symbolic data"
+    name: "Reinforcement learning on symbolic data"
     position: "APPRENTICE RESEARCHER"
-    description: "In collaboration with the INRIA Mnemosyne team, development of a variant of Q-Learning for use with symbolic data, allowing the incorporation of structured knowledge in the form of qualitative or quantitative data. Utilized edit distance to connect data points and navigate the space of the problem."
+    description: "In collaboration with the INRIA Mnemosyne team, development of a variant of Q-Learning for use with symbolic data, allowing the incorporation of structured knowledge in the form of qualitative or quantitative data."
     id: srl
   - date: "2022"
-    name: " GOOGLE ROADEF/EURO challenge 2012"
+    name: "GOOGLE ROADEF/EURO challenge 2012"
     position: "APPRENTICE RESEARCHER"
     description: "1 week to solve a machine reassignment problem, limited by hard constraints. I have mathematically modeled the problem as a system of linear equation, and I have solved it with Mixed Integer Programming methods using the Python-MIP library."
     id: gro
@@ -256,9 +268,6 @@ skills:
   - icon: fas fa-code
     category: Programming
     content: Scala, Python, Java, Haskell, JS/TS, C, C++, Kotlin
-  - icon: fas fa-code
-    category: Reinforcement Learning
-    content: QL, SARSA, DQL, SAC, DIAYN, Gym, Stable Baselines
   - icon: fas fa-database
     category: Data Engineering
     content: Spark, Kafka, Google Cloud Platform, (No)SQL
