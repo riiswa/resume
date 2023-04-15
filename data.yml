@@ -198,11 +198,13 @@ projects:
     position: "APPRENTICE RESEARCHER"
     description: "Explored the benefits and limitations of applying DIAYN, a unsupervised reinforcement learning algorithm for skills discovery, on top of Evolutionary Strategies."
     id: ediayn
+    link: https://hal.science/hal-03953183
   - date: "2022-2023"
     name: "Reinforcement learning on symbolic data"
     position: "APPRENTICE RESEARCHER"
     description: "In collaboration with the INRIA Mnemosyne team, development of a variant of Q-Learning for use with symbolic data, allowing the incorporation of structured knowledge in the form of qualitative or quantitative data."
     id: srl
+    link: https://github.com/riiswa/symbolic-rl
   - date: "2022"
     name: "GOOGLE ROADEF/EURO challenge 2012"
     position: "APPRENTICE RESEARCHER"
@@ -219,7 +221,7 @@ projects:
     position: "APPRENTICE RESEARCHER"
     description: 'Reproduction of an experiment from the paper "Universal adversarial perturbations" (accepted at CVPR 2017) consisting in proving the efficiency of universal perturbations on the VGG11 architecture.'
     id: uap
-    link: https://github.com/riiswa/universal
+    link: https://hal.science/hal-03806871
   - date: "2022"
     name: "MindMail"
     position: "DEVELOPER"
