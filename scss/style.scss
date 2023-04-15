@@ -202,7 +202,7 @@ nav {
 }
 
 .skill-block {
-  @apply bg-white dark:bg-real-gray-800 shadow-lg rounded-md flex;
+  @apply bg-white dark:bg-real-gray-800 shadow-lg rounded-md flex flex-col;
 
   > div {
     @apply p-2;
@@ -216,15 +216,15 @@ nav {
 @media print {
   @page {
     margin: 0;
-    size: A3;
+    size: A4;
   }
   body {
     margin-top:0;
-    margin-right: 3cm;
-    margin-left: 3cm;
+    margin-right: 1.5cm;
+    margin-left: 1.5cm;
   }
   html, body {
-    height: 99%;
+    /*height: 99%;*/
   }
 }
 

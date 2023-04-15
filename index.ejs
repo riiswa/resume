@@ -23,7 +23,7 @@
 <style>
     @media print {
         html {
-            zoom: <%=zoom %>;
+            zoom: 66%;
         }
     }
 </style>
@@ -64,8 +64,8 @@
     <div class="container mx-auto relative lg:w-8/12 print:w-full print:min-w-full">
         <div class="header-wrapper">
             <header
-                class="grid bg-white dark:bg-real-gray-800 md:grid-cols-3 grid-cols-2 gap-x-4 shadow-xl relative header animate__animated">
-                <div class="ribbon down z-10">
+                class="grid bg-white dark:bg-real-gray-800 md:grid-cols-3 grid-cols-2 print:grid-cols-3 gap-x-4 shadow-xl relative header animate__animated">
+                <div class="ribbon down z-10 print:hidden">
                     <div class="content">
                         <% for(let link of links || []){ %>
                             <a class="mx-1 text-right" target="_blank" href="<%= link.url %>"><span
@@ -75,9 +75,9 @@
                             <%} %>
                     </div>
                 </div>
-                <div class="col-span-2 md:col-span-1 relative flex" id="about">
+                <div class="col-span-2 md:col-span-1 print:col-span-1 relative flex" id="about">
                     <h1
-                        class="text-3xl md:text-6xl absolute bottom-0 text-gray-50 md:invisible p-5 w-full leading-8 z-10">
+                        class="text-3xl md:text-6xl print:text-6xl absolute bottom-0 text-gray-50 md:invisible print:invisible p-5 w-full leading-8 z-10">
                         Hi
                         <i class="fas fa-handshake my-red-text"></i>,
                         I'm <span class="font-semibold">
@@ -87,15 +87,15 @@
                             <%= position %>
                         </span>
                     </h1>
-                    <div class="md:max-h-80 overflow-hidden mx-auto">
-                        <img class="md:max-w-none md:h-full" style="margin-left: 50%;
+                    <div class="md:max-h-80 print:max-h-52 overflow-hidden mx-auto">
+                        <img class="md:max-w-none md:h-full print:max-w-none print:h-full print:rounded-full place-self-center" style="margin-left: 50%;
     transform: translateX(-50%);" src="img/profile.jpg" onmouseover="this.src='img/profile-smile.jpg';"
                             onmouseout="this.src='img/profile.jpg';" alt="profile picture">
                     </div>
                 </div>
 
                 <div class="col-span-2 m-2">
-                    <h1 class="text-4xl hidden md:inline leading-6">Hello <i class="fas fa-handshake my-red-text"></i>,
+                    <h1 class="text-4xl hidden md:inline print:inline leading-6">Hello <i class="fas fa-handshake my-red-text"></i>,
                         I'm
                         <span class="font-semibold">
                             <%= firstName %>
@@ -104,8 +104,8 @@
                             <%= position %>
                         </span>
                     </h1>
-                    <hr class="mb-1 hidden md:block">
-                    <div class="grid grid-cols-4 gap-4 gap-x-10">
+                    <hr class="mb-1 hidden md:block print:block">
+                    <div class="grid grid-cols-4 gap-4 print:gap-1 gap-x-10">
                         <% for(let info of details || []){ %>
                             <div class="font-bold">
                                 <%= info.key %>
@@ -134,11 +134,11 @@
             </header>
         </div>
         <section class="px-2">
-            <div class="relative grid grid-cols-1 md:grid-cols-2" id="work-experience-education">
-                <div class="top-20 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto invisible md:visible">
+            <div class="relative grid grid-cols-1 md:grid-cols-2 print:grid-cols-2 place-items-center" id="work-experience-education">
+                <div class="top-20 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto invisible md:visible print:visible">
                 </div>
                 <div class="col-span-1 relative">
-                    <div class="top-16 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto  md:invisible"></div>
+                    <div class="top-16 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto  md:invisible print:invisible"></div>
                     <h2 id="work-experience"><i class="fas fa-briefcase"></i> WORK EXPERIENCE</h2>
                     <% for(let job of jobs || []){ %>
                         <div class="job-block-wrapper">
@@ -194,7 +194,26 @@
                         <%} %>
                 </div>
                 <div class="col-span-1 relative">
-                    <div class="top-16 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto md:invisible"></div>
+
+                    <h2 id="skills-interests"><i class="fas fa-book"></i> TECHNICAL SKILLS</h2>
+                    <section class="grid grid-cols-2 md:grid-cols-3 justify-items-center gap-4 justify-center place-items-center px-2">
+                        <% for(let skill of skills || []){ %>
+                            <div class="skill-block-wrapper">
+                                <div class="skill-block animate__animated animate__slow">
+                                    <div class="skill-block-category text-center"><i class="<%= skill.icon %>"></i>
+                                        <%= skill.category %>
+                                    </div>
+                                    <% if (skill.content) {%>
+                                        <div class="text-center my-auto">
+                                            <%= skill.content %>
+                                        </div>
+                                    <%} %>
+                                </div>
+                            </div>
+                        <%} %>
+                    </section>
+
+                    <div class="top-16 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto md:invisible print:invisible"></div>
                     <h2 id="education"><i class="fas fa-user-graduate"></i> EDUCATION</h2>
 
                     <% for(let education of educations || []){ %>
@@ -218,9 +237,9 @@
                                             <p class="position">
                                                 <%= education.school %>
                                             </p>
-                                            <p class="text-justify">
-                                                <%= education.description %>
-                                            </p>
+<!--                                            <p class="text-justify">-->
+<!--                                                <%= education.description %>-->
+<!--                                            </p>-->
                                             <% if (education.knowledges) {%>
                                                 <div
                                                     class="badge-text-block flex flex-wrap text-white gap-1 justify-center mt-2">
@@ -267,24 +286,6 @@
                                             <p class="text-justify">
                                                 <%= project.description %>
                                             </p>
-                    </div>
-                </div>
-                <%} %>
-        </section>
-        <div class="my-10"></div>
-        <h2 id="skills-interests"><i class="fas fa-book"></i> TECHNICAL SKILLS</h2>
-        <section class="flex flex-wrap gap-5 justify-center px-2">
-            <% for(let skill of skills || []){ %>
-                <div class="skill-block-wrapper">
-                    <div class="skill-block animate__animated animate__slow">
-                        <div class="skill-block-category text-center"><i class="<%= skill.icon %>"></i>
-                            <%= skill.category %>
-                        </div>
-                        <% if (skill.content) {%>
-                            <div class="text-center my-auto">
-                                <%= skill.content %>
-                            </div>
-                            <%} %>
                     </div>
                 </div>
                 <%} %>
