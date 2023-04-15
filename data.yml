@@ -18,9 +18,9 @@ details:
   - key: "Location"
     value: "France (open to relocation in Europa)"
   - key: "Phone"
-    value: "+33 6 52 81 11 65"
+    value: "+33 X XX XX XX XX"
   - key: "E-mail"
-    value: "contact@warisradji.com"
+    value: "anon@mail.com"
   - key: "Website"
     value: "https://warisradji.com"
   - key: "Interests"
@@ -198,18 +198,20 @@ projects:
     position: "APPRENTICE RESEARCHER"
     description: "Explored the benefits and limitations of applying DIAYN, a unsupervised reinforcement learning algorithm for skills discovery, on top of Evolutionary Strategies."
     id: ediayn
+    link: https://hal.science/hal-03953183
   - date: "2022-2023"
     name: "Reinforcement learning on symbolic data"
     position: "APPRENTICE RESEARCHER"
     description: "In collaboration with the INRIA Mnemosyne team, development of a variant of Q-Learning for use with symbolic data, allowing the incorporation of structured knowledge in the form of qualitative or quantitative data."
     id: srl
+    link: https://github.com/riiswa/symbolic-rl
   - date: "2022"
     name: "GOOGLE ROADEF/EURO challenge 2012"
     position: "APPRENTICE RESEARCHER"
     description: "1 week to solve a machine reassignment problem, limited by hard constraints. I have mathematically modeled the problem as a system of linear equation, and I have solved it with Mixed Integer Programming methods using the Python-MIP library."
     id: gro
     link: https://github.com/Flopsky/google-roadef-euro-2012
-  - date: "2022 (Active)"
+  - date: "2022"
     name: "Lunaconf"
     position: "ANDROID KOTLIN DEVELOPER"
     description: "Development of an application to help attendees follow the Lunaconf conference, through an interactive schedule."
@@ -219,13 +221,13 @@ projects:
     position: "APPRENTICE RESEARCHER"
     description: 'Reproduction of an experiment from the paper "Universal adversarial perturbations" (accepted at CVPR 2017) consisting in proving the efficiency of universal perturbations on the VGG11 architecture.'
     id: uap
-    link: https://github.com/riiswa/universal
+    link: https://hal.science/hal-03806871
   - date: "2022"
     name: "MindMail"
     position: "DEVELOPER"
     description: 'Creation of an "intelligent" webmail client, capable of classifying mails by automatically determining the different categories. An interactive interface allows to visualize the created clusters.'
     id: mindmail
-  - date: "2021-2022 (Active)"
+  - date: "2021-2022"
     name: "Eirb'IA"
     position: "CO-FOUNDER (with Hector Piteau)"
     description: "Creation and management of the Artificial Intelligence Club of ENSEIRB-MATMECA through workshops, conferences, debates, competitions and paper popularization."
@@ -235,13 +237,13 @@ projects:
     position: "LEAD TECH"
     description: "24 hours to imagine solutions for space defense. My solution consisted in the implementation of a robust satellite network based on the Blockchain to ensure a reliable exchange of information."
     id: definspace
-  - date: "2020-2022 (Active)"
+  - date: "2020-2022"
     name: "Pokémon Studio"
     position: "LEAD BACK-END DEVELOPER"
     description: "Creation of Pokemon Studio, a tool developed in React to create its Pokemon game project more simply. The goal is to replace Ruby Host, the Database editor, and to allow more relevance by leaving RPG Maker XP."
     id: studio
     link: https://www.youtube.com/watch?v=kvfdrS4fCbg&ab_channel=Pok%C3%A9monWorkshop
-  - date: "2020-2022 (Active)"
+  - date: "2020-2022"
     name: "Scala Retro"
     position: "MAINTAINER"
     description: "Development of a sbt plugin for Scala Retro, a package that allows to generate UML Class Diagrams from Scala source code."
