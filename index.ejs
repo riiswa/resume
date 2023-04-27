@@ -23,7 +23,7 @@
 <style>
     @media print {
         html {
-            zoom: 66%;
+            zoom: <%= zoom %>;
         }
     }
 </style>
@@ -87,8 +87,8 @@
                             <%= position %>
                         </span>
                     </h1>
-                    <div class="md:max-h-80 print:max-h-52 overflow-hidden mx-auto">
-                        <img class="md:max-w-none md:h-full print:max-w-none print:h-full print:rounded-full place-self-center" style="margin-left: 50%;
+                    <div class="md:max-h-80 print:max-h-60 overflow-hidden mx-auto print:flex print:justify-items-center print:items-center">
+                        <img class="md:max-w-none md:h-full print:max-w-none print:h-full print:rounded-full" style="margin-left: 50%;
     transform: translateX(-50%);" src="img/profile.jpg" onmouseover="this.src='img/profile-smile.jpg';"
                             onmouseout="this.src='img/profile.jpg';" alt="profile picture">
                     </div>
@@ -128,7 +128,7 @@
                                             <%} %>
                     </div>
                 </div>
-                <div class="my-red text-gray-50 col-span-full p-8 text-center text-xl">
+                <div class="my-red text-gray-50 col-span-full p-4 text-center text-xl print:text-md print:px-16">
                     <%= description %>
                 </div>
             </header>
@@ -195,8 +195,8 @@
                 </div>
                 <div class="col-span-1 relative">
 
-                    <h2 id="skills-interests"><i class="fas fa-book"></i> TECHNICAL SKILLS</h2>
-                    <section class="grid grid-cols-2 md:grid-cols-3 justify-items-center gap-4 justify-center place-items-center px-2">
+                    <h2 id="skills-interests"><i class="fas fa-book"></i> SKILLS</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-3 justify-items-center gap-4 justify-center place-items-center px-2 md:pr-0 print:pr-0 md:pl-10 print:pl-10">
                         <% for(let skill of skills || []){ %>
                             <div class="skill-block-wrapper">
                                 <div class="skill-block animate__animated animate__slow">
@@ -211,7 +211,7 @@
                                 </div>
                             </div>
                         <%} %>
-                    </section>
+                    </div>
 
                     <div class="top-16 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto md:invisible print:invisible"></div>
                     <h2 id="education"><i class="fas fa-user-graduate"></i> EDUCATION</h2>
@@ -257,11 +257,12 @@
                 </div>
             </div>
         </section>
+        <div class="pagebreak"> </div>
         <div class="my-10"></div>
-        <h2 id="achievements-projects"><i class="fas fa-project-diagram"></i> ACHIEVEMENTS & PROJECTS</h2>
-        <section class="flex flex-wrap gap-3 px-2">
+        <h2 id="achievements-projects"><i class="fas fa-trophy"></i> ACHIEVEMENTS & PROJECTS</h2>
+        <section class="flex flex-wrap gap-x-6 px-2">
             <% for(let project of projects || []){ %>
-                <div class="relative project-block-wrapper" style="flex: 1 0 400px;">
+                <div class="relative project-block-wrapper self-center" style="flex: 1 0 400px;">
                     <div class="timeline-block project-block animate__animated">
                         <% if (project.link) { %>
                             <% if (project.link.includes("github.com")) { %>
@@ -292,6 +293,11 @@
         </section>
     </div>
     <div class="my-5"></div>
+    <div class="hidden print:block text-center pt-4">
+        A online version of this resume is also available, with updates as they occur, on <a class="my-red-text" href="https://warisradji.com/resume/">warisradji.com/resume/</a>.
+        <br>
+        <img class="p-4 w-2/12 mx-auto" src="img/qrcode.png" alt="QR-code of the online resume.">
+    </div>
     <footer class="p-14 my-red text-gray-50 print:hidden text-center">
         Profiles: <a href="https://warisradji.com/resume/">Main</a> | <a
             href="https://warisradji.com/resume/data.html">Data</a> | <a

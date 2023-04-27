@@ -1,4 +1,4 @@
-zoom: "68%"
+zoom: "63.25%"
 title: "Waris Radji - Resume"
 firstName: "Waris"
 lastName: "Radji"
@@ -16,23 +16,23 @@ details:
   - key: "Age"
     value: "22 years"
   - key: "Location"
-    value: "France (open to relocation in Europa)"
+    value: "France"
   - key: "Phone"
-    value: "+33 X XX XX XX XX"
+    value: "+33 6 52 81 11 65"
   - key: "E-mail"
-    value: "anon@mail.com"
+    value: "contact@warisradji.com"
   - key: "Website"
     value: "https://warisradji.com"
   - key: "Interests"
     value: "Street Lifting, Competitive Programming, Evolutionary Genetics"
-description: "Seeking a challenging position as a Reinforcement Learning Research Scientist in an innovative and state-of-the-art company or research laboratory. Experienced Software Engineer with 3+ years of experience, I have a solid background in designing AI system, that gives me a unique perspective and set of skills that I believe would be valuable in contributing to the development of advanced reinforcement learning research."
+description: "Seeking a challenging PhD position in a field related to Deep Reinforcement Learning. Experienced Software Engineer with 3+ years of experience, I have a solid background in designing AI system, that gives me a unique perspective and set of skills that I believe would be valuable in contributing to the development of advanced RL research."
 jobs:
   - date: "Jan 2023 - Aug 2023"
     company: "Inria - Team Scool"
     logo: "img/logo/inria.png"
     arrow: 50
-    position: "RESEARCH SCIENTIST • Internship supervised by Odalric-Ambrym Maillard • Lille"
-    description: "Investigate the extension of novel, multi-armed bandit-inspired strategies from small Markov Decision Processes to larger models, focusing on a non-parametric and model-free approach."
+    position: "RESEARCH SCIENTIST • Internship supd. by Odalric-Ambrym Maillard • Lille"
+    description: "Investigate the extension of novel, multi-armed bandit-inspired strategies for small Markov Decision Processes to larger models, with a particular emphasis on developing improvements to IMED-RL, a model-based and asymptotically optimal algorithm. We use function approximation (statistical and deep learning) to extend IMED-RL  and provide efficient solutions to high-dimensional problems."
     badges:
       - name: "Python"
         icon: "img/ico/python.png"
@@ -43,7 +43,7 @@ jobs:
     company: "Lunatech | Scala Center"
     logo: "img/logo/lunatech.jpg"
     arrow: 50
-    position: "OPEN-SOURCE DEVELOPER • Internship supervised by Chris Kipp • Rotterdam"
+    position: "OPEN-SOURCE DEVELOPER • Internship supd. by Chris Kipp • Rotterdam"
     description: "Working on Scala 3 support and adding the call hierarchy feature into the open-source tool Metals, the Scala language server. I have been involved in the development of other minor features and in fixing many issues."
     badges:
       - name: "Scala"
@@ -100,7 +100,7 @@ jobs:
     company: "CNRS - Laboratoire d'Océanographie et du Climat"
     logo: "img/logo/locean.png"
     arrow: 50
-    position: "SOFTWARE ENGINEER • Internship supervised by Dimitry Khvorostyanov • Paris"
+    position: "SOFTWARE ENGINEER • Internship supd. by Dimitry Khvorostyanov • Paris"
     description: "Development of new functionalities for L-SAT, a web platform for collaborative analysis and exploration of satellite data. Minor changes to existing data analysis codes."
     badges:
       - name: "Python"
@@ -143,7 +143,7 @@ educations:
     logo: "img/logo/ub.jpg"
     school: " University of Bordeaux Graduate Research School"
     description: "The Numerics program aims to train tomorrow's experts in complex digital systems analysis, through a week of courses and projects on the themes of optimisation and decision, and weekly seminars."
-    arrow: 20
+    arrow: 50
     knowledges:
       - Combinatorial Optimization
       - Mathematical Modelling and Programming
@@ -178,7 +178,7 @@ educations:
     logo: "img/logo/uspn.png"
     school: "Université Sorbonne Paris Nord (DUT Informatique)"
     description: "Multidisciplinary training that trains assistant engineers and project managers in management and industrial computing. Operational in software and hardware development, we have participated in the design, realization and implementation of computer systems."
-    arrow: 80
+    arrow: 50
     knowledges:
       - OOP
       - Database
@@ -275,10 +275,13 @@ skills:
     content: Spark, Kafka, Google Cloud Platform, (No)SQL
   - icon: fas fa-robot
     category: Machine Learning
-    content: Scikit-Learn, TensorFlow, Pytorch, Clustering4Ever, NLTK, Deeplearning4j
+    content: Scikit-Learn, TensorFlow, Pytorch, NLTK, Deeplearning4j
   - icon: fas fa-chart-pie
     category: Data Visualization
     content: D3.js, Plotly, ChartJS, Processing, Matplotlib, ggplot
   - icon: fas fa-globe
     category: Web Framework
     content: React, Play!, Flask, Django, Angular
+  - icon: fas fa-balance-scale
+    category: Soft Skills
+    content: Adaptability, Creativity, Problem-Solving, Attention to Detail

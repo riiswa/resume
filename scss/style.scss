@@ -95,7 +95,7 @@ nav {
 }
 
 .arrow {
-  @apply absolute invisible md:visible dark:arrow-dark;
+  @apply absolute invisible md:visible print:visible dark:arrow-dark;
   width: 12px;
   height: 41px;
   display: block;
@@ -129,7 +129,7 @@ nav {
 }
 
 .timeline-point {
-  @apply absolute my-red w-2 h-2 block invisible md:visible;
+  @apply absolute my-red w-2 h-2 block invisible md:visible print:visible;
   top: var(--timeline-top);
   border-radius: 50%;
 }
@@ -150,11 +150,11 @@ nav {
 }
 
 .timeline-block-left {
-  @apply timeline-block md:mr-10;
+  @apply timeline-block md:mr-10 print:mr-10;
 }
 
 .timeline-block-right {
-  @apply timeline-block md:ml-10;
+  @apply timeline-block md:ml-10 print:ml-10;
 }
 
 .date {
@@ -219,12 +219,26 @@ nav {
     size: A4;
   }
   body {
-    margin-top:0;
-    margin-right: 1.5cm;
-    margin-left: 1.5cm;
+    padding-top: 5mm;
+    /*margin-right: 1.5cm;
+    margin-left: 1.5cm;*/
   }
   html, body {
     /*height: 99%;*/
+  }
+
+  .education-block-wrapper {
+    page-break-inside: avoid;
+  }
+
+  .pagebreak {
+    clear: both;
+    page-break-before: always;
+  }
+
+  section {
+    padding-left: 15mm!important;
+    padding-right: 15mm!important;
   }
 }
 
