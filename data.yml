@@ -275,7 +275,7 @@ skills:
     content: Spark, Kafka, Google Cloud Platform, (No)SQL
   - icon: fas fa-robot
     category: Machine Learning
-    content: JAX, Pytorch, Scikit-Learn, TensorFlow, NLTK, Deeplearning4j
+    content: JAX, Pytorch, Scikit-Learn, TensorFlow, Deeplearning4j
   - icon: fas fa-chart-pie
     category: Data Visualization
     content: D3.js, Plotly, ChartJS, Processing, Matplotlib, ggplot
