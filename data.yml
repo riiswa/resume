@@ -2,7 +2,7 @@ zoom: "63.25%"
 title: "Waris Radji - Resume"
 firstName: "Waris"
 lastName: "Radji"
-position: "Artificial Intelligence Research Student & Freelancer"
+position: "PhD Student in Deep/Theoretical Reinforcement Learning"
 links:
   - url: "https://github.com/riiswa"
     icon: "fab fa-github"
@@ -14,7 +14,7 @@ links:
     icon: "fas fa-globe"
 details:
   - key: "Age"
-    value: "23 years"
+    value: "24 years"
   - key: "Location"
     value: "France"
   - key: "Phone"
@@ -25,14 +25,14 @@ details:
     value: "https://warisradji.com"
   - key: "Interests"
     value: "Street Lifting, Competitive Programming, Evolutionary Genetics"
-description: "Seeking a challenging PhD position in a field related to Deep Reinforcement Learning. Experienced Software Engineer with 3+ years of experience, I have a solid background in designing AI system, that gives me a unique perspective and set of skills that I believe would be valuable in contributing to the development of advanced RL research."
+description: "Software Engineer & Researcher with 3+ years of industry experience in AI system design. Combines practical software engineering expertise with theoretical foundations in deep reinforcement learning, bringing a unique interdisciplinary perspective that bridges RL research with scalable implementation."
 jobs:
-  - date: "Jan 2023 - Apr 2024"
+  - date: "Jan 2023 - Now"
     company: "Inria - Team Scool"
     logo: "img/logo/inria.png"
     arrow: 50
-    position: "RESEARCH ENGINEER • supd. by Odalric-Ambrym Maillard • Lille"
-    description: "Investigate the extension of novel, multi-armed bandit-inspired strategies for small Markov Decision Processes to larger models, with a particular emphasis on developing improvements to IMED-RL, a model-based and asymptotically optimal algorithm. We use function approximation (statistical and deep learning) to extend IMED-RL  and provide efficient solutions to high-dimensional problems."
+    position: "PHD Student • supd. by Odalric-Ambrym Maillard • Lille"
+    description: "Bringing theoretical rigor to deep Reinforcement Learning exploration in high-dimensional stochastic environments, leveraging multi-armed bandits theory for principled yet scalable solutions."
     badges:
       - name: "Python"
         icon: "img/ico/python.png"
